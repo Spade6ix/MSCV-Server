@@ -31,7 +31,7 @@ public class CustomerPhone implements Serializable {
         this.customerID = p.customerID;
     }
 
-    public void setphone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -39,7 +39,7 @@ public class CustomerPhone implements Serializable {
         this.customerID = customerID;
     }
 
-    public String getphone() {
+    public String getPhone() {
         return phone;
     }
 

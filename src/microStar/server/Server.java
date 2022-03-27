@@ -11,6 +11,7 @@ import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -29,6 +30,7 @@ import microStar.model.LiveChat;
 import microStar.model.Payment;
 import microStar.model.Query;
 import microStar.model.Response;
+import org.hibernate.type.LocalDateTimeType;
 
 public class Server {
     private static final Logger logger = LogManager.getLogger(Server.class);
@@ -91,34 +93,51 @@ public class Server {
 			ResultSet result;
 			boolean login;
 			String customerID;
-			List<Response> responseList;
-			List<Complaint> complaintList;
-			List<Payment> paymentList;
 			try {
 				while(true) {
 					try {
+                        List<Response> responseList;
+                        List<Complaint> complaintList;
+                        List<Payment> paymentList;
+                        List<CustomerEmail> customerEmailList = new ArrayList<>();
+                        List<CustomerPhone> customerPhoneList = new ArrayList<>();
+                        List<Employee> employeeList = new ArrayList<>();
 						action = (String) objIs.readObject();
 
 						if (action.equalsIgnoreCase("Customer Login")) {
 							customerObj = (Customer) objIs.readObject();
 							login = customerObj.authenticate();
 							objOs.writeObject(login);
+							if(login){
+								logger.info("Customer Authenticated");
+							}
+							else{
+								logger.info("Customer provided incorrect credentials");
+							}
 						}
 						else if (action.equalsIgnoreCase("Employee Login")) {
 							employeeObj = (Employee) objIs.readObject();
 							login = employeeObj.authenticate();
 							objOs.writeObject(login);
+							if(login){
+								logger.info("Employee Authenticated");
+							}
+							else{
+								logger.info("Employee Provided incorrect credentials");
+							}
 						}
 						else if (action.equalsIgnoreCase("Create complaint")) {
 							complaintObj = (Complaint) objIs.readObject();
 							complaintObj.create();
 							objOs.writeObject(true);
+							logger.info("Complaint Created");
 						}
 						else if (action.equalsIgnoreCase("Make Query")) {
 							customerID = (String) objIs.readObject();
 							result = queryObj.read(customerID);
 							if(result!=null){
 								objOs.writeObject(result);
+								logger.info("Query executed");
 							}
 						}
 						else if (action.equalsIgnoreCase("View All Responses to a complaint")) {
@@ -130,28 +149,53 @@ public class Server {
 								}
 							}
 							objOs.writeObject(responseList);
+							logger.info("All Responses to a complaint are fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View All Complaints of a Customer")) {
-							//Customer Details included
 							customerObj = (Customer) objIs.readObject();
 							complaintList = complaintObj.readAll();
+							List<Response> responseList1 = new ArrayList<>();
+							LocalDateTime max = LocalDateTime.MIN;
 							for(Complaint c : complaintList){
+								responseList = responseObj.readAll();
 								if(!c.getCustomerID().equals(customerObj.getCustomerID())){
 									complaintList.remove(c);
 								}
+								else{
+									for(Response r : responseList){
+										if(r.getComplaintID() != c.getComplaintID()){
+											responseList.remove(r);
+										}
+									}
+									//find max in responseList
+									for(Response r : responseList){
+										if(max.isBefore(r.getResponseDateTime())){
+											responseObj = r;
+										}
+									}
+									responseList1.add(responseObj);
+									employeeObj.setStaffID(responseObj.getStaffID());
+									employeeList.add(employeeObj);
+								}
+							}
+							for(Employee e : employeeList){
+								e = e.readEmployee();
 							}
 							objOs.writeObject(complaintList);
-							customerObj = customerObj.readCustomer();
-							objOs.writeObject(customerObj);
+							//customerObj = customerObj.readCustomer();
+							//objOs.writeObject(customerObj);
+							objOs.writeObject(responseList1);
+							objOs.writeObject(employeeList);
+							logger.info("Past Complaints of a customer fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View a Complaint of a Customer")) {
-							//Customer Details included
 							complaintObj = (Complaint) objIs.readObject();
 							complaintObj = complaintObj.readComplaint();
-							customerObj.setCustomerID(complaintObj.getCustomerID());
-							customerObj = customerObj.readCustomer();
+							//customerObj.setCustomerID(complaintObj.getCustomerID());
+							//customerObj = customerObj.readCustomer();
 							objOs.writeObject(complaintObj);
-							objOs.writeObject(customerObj);
+							//objOs.writeObject(customerObj);
+							logger.info("Details of a Complaint fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View All Payments made by a Customer")) {
 							customerObj = (Customer) objIs.readObject();
@@ -162,6 +206,7 @@ public class Server {
 								}
 							}
 							objOs.writeObject(paymentList);
+							logger.info("Past payments of a customer fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Number of Resolved & Unresolved Complaints")) {
 							complaintList = complaintObj.readAll();
@@ -177,6 +222,7 @@ public class Server {
 							}
 							objOs.writeObject(resolved);
 							objOs.writeObject(unresolved);
+							logger.info("Number of resolved and unresolved complaints calculated successfully");
 						}
 						else if (action.equalsIgnoreCase("View Payment Complaints")) {
 							complaintList = complaintObj.readAll();
@@ -186,6 +232,7 @@ public class Server {
 								}
 							}
 							objOs.writeObject(complaintList);
+							logger.info("Payment Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Internet Complaints")) {
 							complaintList = complaintObj.readAll();
@@ -195,6 +242,7 @@ public class Server {
 								}
 							}
 							objOs.writeObject(complaintList);
+							logger.info("Internet Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Cable Complaints")) {
 							complaintList = complaintObj.readAll();
@@ -204,6 +252,7 @@ public class Server {
 								}
 							}
 							objOs.writeObject(complaintList);
+							logger.info("Cable Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Other Complaints")) {
 							complaintList = complaintObj.readAll();
@@ -213,15 +262,42 @@ public class Server {
 								}
 							}
 							objOs.writeObject(complaintList);
+							logger.info("Other Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Complaint details and Customer account info")) {
-
+						    complaintObj = (Complaint) objIs.readObject();
+						    complaintObj = complaintObj.readComplaint();
+						    customerObj.setCustomerID(complaintObj.getCustomerID());
+						    customerObj = customerObj.readCustomer();
+						    result = customerPhoneObj.readAll();
+							while(result.next()){
+								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
+									customerPhoneObj.setCustomerID(result.getString(2));
+									customerPhoneObj.setPhone(result.getString(1));
+									customerPhoneList.add(customerPhoneObj);
+								}
+							}
+							result = customerEmailObj.readAll();
+							while(result.next()){
+								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
+									customerEmailObj.setCustomerID(result.getString(2));
+									customerEmailObj.setEmail(result.getString(1));
+									customerEmailList.add(customerEmailObj);
+								}
+							}
+							objOs.writeObject(customerObj);
+							objOs.writeObject(complaintObj);
+							objOs.writeObject(customerPhoneList);
+							objOs.writeObject(customerEmailList);
+							logger.info("Complaint details and associated Customer info fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("CSR Create Response")) {
 							responseObj = (Response) objIs.readObject();
 							responseObj.setResponseDateTime(LocalDateTime.now());
+							responseObj.setProposedDateOfVisit(null);
 							responseObj.create();
 							objOs.writeObject(true);
+							logger.info("Customer Service Rep created a Response");
 						}
 						else if (action.equalsIgnoreCase("Add a Technician ID to a complaint")) {
 							String staffID;
@@ -231,6 +307,7 @@ public class Server {
 							complaintObj.setStaffID(staffID);
 							complaintObj.updateTechnician();
 							objOs.writeObject(true);
+							logger.info("Complaint updated successfully");
 						}
 						else if (action.equalsIgnoreCase("View Complaints assigned to a Technician")) {
 							complaintObj = (Complaint) objIs.readObject();
@@ -241,21 +318,25 @@ public class Server {
 								}
 							}
 							objOs.writeObject(complaintList);
+							logger.info("Complaints assigned to a particular technician are fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("Technician Create Response")) {
 							responseObj = (Response) objIs.readObject();
 							responseObj.setResponseDateTime(LocalDateTime.now());
 							responseObj.create();
 							objOs.writeObject(true);
+							logger.info("Technician created a Response");
 						}
 						else if (action.equalsIgnoreCase("Employee Create LiveChat")) {
 							if(LocalTime.now().getHour()>=8 && LocalTime.now().getHour()<=19){
 								liveChatObj = (LiveChat) objIs.readObject();
 								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage());
 								objOs.writeObject(true);
+								logger.info("Live Chat sent to Database successfully");
 							}
 							else{
 								objOs.writeObject(false);
+								logger.info("Live Chat not sent to Database because Live Chat period is temporarily expired");
 							}
 						}
 						else if (action.equalsIgnoreCase("Customer Create LiveChat")) {
@@ -263,9 +344,11 @@ public class Server {
 								liveChatObj = (LiveChat) objIs.readObject();
 								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage());
 								objOs.writeObject(true);
+								logger.info("Live Chat sent to Database successfully");
 							}
 							else{
 								objOs.writeObject(false);
+								logger.info("Live Chat not sent to Database because Live Chat period is temporarily expired");
 							}
 						}
 						else if (action.equalsIgnoreCase("Update Complaint Status")) {
@@ -276,6 +359,19 @@ public class Server {
 							complaintObj.setStatus(status);
 							complaintObj.updateStatus();
 							objOs.writeObject(true);
+							logger.info("Complaint updated successfully");
+						}
+						else if (action.equalsIgnoreCase("Is Employee a Technician?")){
+							employeeObj = (Employee) objIs.readObject();
+							employeeObj = employeeObj.readEmployee();
+							if(employeeObj.getJob() == 'T'){
+								objOs.writeObject(true);
+								logger.info("Employee is a Technician");
+							}
+							else{
+								objOs.writeObject(false);
+								logger.info("Employee is not a Technician");
+							}
 						}
 						objOs.flush();
 					}
@@ -291,28 +387,24 @@ public class Server {
 						logger.fatal("ClassCast Exception occurred");
 						ex.printStackTrace();
 					}
+					catch (IOException ex) {
+						logger.fatal("IOException occurred");
+						ex.printStackTrace();
+					}
 					catch (Exception ex) {
 						logger.fatal("Exception occurred");
 						ex.printStackTrace();
 					}
-					//SessionFactoryBuilder.closeSessionFactory();
-					//DBConnectorFactory.closeDatabaseConnection();
 				}
 			}
-			/*catch (EOFException ex) {
-				logger.fatal("Client has terminated connections with the server");
-				ex.printStackTrace();
-			}
-			catch (IOException ex) {
-				logger.fatal("IOException Occurred");
-				ex.printStackTrace();
-			}*/
 			catch (Exception ex) {
 				logger.fatal("Exception occurred");
 				ex.printStackTrace();
 			}
-			//SessionFactoryBuilder.closeSessionFactory();
-			//DBConnectorFactory.closeDatabaseConnection();
+			finally {
+				SessionFactoryBuilder.closeSessionFactory();
+				DBConnectorFactory.closeDatabaseConnection();
+			}
 		}
 	}
 
