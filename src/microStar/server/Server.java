@@ -139,6 +139,9 @@ public class Server {
 								objOs.writeObject(result);
 								logger.info("Query executed");
 							}
+							else{
+								logger.info("Customer associated with ID has no Query Info in the Database");
+							}
 						}
 						else if (action.equalsIgnoreCase("View All Responses to a complaint")) {
 							complaintObj = (Complaint) objIs.readObject();
@@ -290,6 +293,30 @@ public class Server {
 							objOs.writeObject(customerPhoneList);
 							objOs.writeObject(customerEmailList);
 							logger.info("Complaint details and associated Customer info fetched successfully");
+						}
+						else if (action.equalsIgnoreCase("View Customer account info")) {
+							customerObj = (Customer) objIs.readObject();
+							customerObj = customerObj.readCustomer();
+							result = customerPhoneObj.readAll();
+							while(result.next()){
+								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
+									customerPhoneObj.setCustomerID(result.getString(2));
+									customerPhoneObj.setPhone(result.getString(1));
+									customerPhoneList.add(customerPhoneObj);
+								}
+							}
+							result = customerEmailObj.readAll();
+							while(result.next()){
+								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
+									customerEmailObj.setCustomerID(result.getString(2));
+									customerEmailObj.setEmail(result.getString(1));
+									customerEmailList.add(customerEmailObj);
+								}
+							}
+							objOs.writeObject(customerObj);
+							objOs.writeObject(customerPhoneList);
+							objOs.writeObject(customerEmailList);
+							logger.info("Customer info fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("CSR Create Response")) {
 							responseObj = (Response) objIs.readObject();
