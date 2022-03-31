@@ -47,6 +47,7 @@ public class Server {
 			while(true){
 				connectionSocket = serverSocket.accept();
 				logger.info("Server is starting a thread for a Client");
+				//JOptionPane.showMessageDialog(null,"Connection Established","Server Connection Status",JOptionPane.INFORMATION_MESSAGE);
 				ClientHandler client = new ClientHandler(connectionSocket);
 				client.start();
 			}
@@ -103,7 +104,6 @@ public class Server {
                         List<CustomerPhone> customerPhoneList = new ArrayList<>();
                         List<Employee> employeeList = new ArrayList<>();
 						action = (String) objIs.readObject();
-
 						if (action.equalsIgnoreCase("Customer Login")) {
 							customerObj = (Customer) objIs.readObject();
 							login = customerObj.authenticate();
@@ -400,6 +400,12 @@ public class Server {
 								logger.info("Employee is not a Technician");
 							}
 						}
+						/*else{
+							objOs.close();
+							objIs.close();
+							socket.close();
+							return;
+						}*/
 						objOs.flush();
 					}
 					catch (NullPointerException ex) {

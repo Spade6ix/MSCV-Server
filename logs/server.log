@@ -1,0 +1,12 @@
+[FATAL] 2022-03-31 01:11:27.717 [Thread-0] Server - IOException occurred
+[INFO ] 2022-03-31 01:30:35.476 [main] Server - Server has started!!!
+[INFO ] 2022-03-31 01:32:40.630 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-03-31 01:34:27.769 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-03-31 01:34:32.004 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-03-31 01:34:32.144 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-03-31 01:34:32.395 [Thread-0] SessionFactoryBuilder - Session Closed
+[INFO ] 2022-03-31 01:38:51.850 [main] Server - Server has started!!!
+[INFO ] 2022-03-31 01:39:49.258 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-03-31 01:41:09.150 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-03-31 01:41:10.120 [Thread-0] Server - Customer provided incorrect credentials
+[INFO ] 2022-03-31 01:41:10.417 [Thread-0] SessionFactoryBuilder - Session Closed
