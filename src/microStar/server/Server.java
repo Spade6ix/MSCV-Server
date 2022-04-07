@@ -107,7 +107,9 @@ public class Server {
 						if (action.equalsIgnoreCase("Customer Login")) {
 							customerObj = (Customer) objIs.readObject();
 							login = customerObj.authenticate();
+							customerObj = customerObj.readCustomer();
 							objOs.writeObject(login);
+							objOs.writeObject(customerObj);
 							if(login){
 								logger.info("Customer Authenticated");
 							}
@@ -118,7 +120,9 @@ public class Server {
 						else if (action.equalsIgnoreCase("Employee Login")) {
 							employeeObj = (Employee) objIs.readObject();
 							login = employeeObj.authenticate();
+							employeeObj = employeeObj.readEmployee();
 							objOs.writeObject(login);
+							objOs.writeObject(employeeObj);
 							if(login){
 								logger.info("Employee Authenticated");
 							}
