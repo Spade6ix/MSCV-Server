@@ -151,32 +151,34 @@ public class Server {
 						else if (action.equalsIgnoreCase("View All Responses to a complaint")) {
 							complaintObj = (Complaint) objIs.readObject();
 							responseList = responseObj.readAll();
+							List<Response> responseList1 = new ArrayList<>();
 							for(Response r : responseList){
-								if(complaintObj.getComplaintID() != r.getComplaintID()){
-									responseList.remove(r);
+								if(complaintObj.getComplaintID() == r.getComplaintID()){
+									responseList1.add(r);
 								}
 							}
-							objOs.writeObject(responseList);
+							objOs.writeObject(responseList1);
 							logger.info("All Responses to a complaint are fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View All Complaints of a Customer")) {
 							customerObj = (Customer) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Response> responseList1 = new ArrayList<>();
+							List<Response> responseList2 = new ArrayList<>();
+							List<Employee> employeeList1 = new ArrayList<>();
 							LocalDateTime max = LocalDateTime.MIN;
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for(Complaint c : complaintList){
 								responseList = responseObj.readAll();
-								if(!c.getCustomerID().equals(customerObj.getCustomerID())){
-									complaintList.remove(c);
-								}
-								else{
+								if(c.getCustomerID().equals(customerObj.getCustomerID())) {
+									complaintList1.add(c);
 									for(Response r : responseList){
-										if(r.getComplaintID() != c.getComplaintID()){
-											responseList.remove(r);
+										if(r.getComplaintID() == c.getComplaintID()){
+											responseList2.add(r);
 										}
 									}
 									//find max in responseList
-									for(Response r : responseList){
+									for(Response r : responseList2){
 										if(max.isBefore(r.getResponseDateTime())){
 											responseObj = r;
 										}
@@ -187,13 +189,13 @@ public class Server {
 								}
 							}
 							for(Employee e : employeeList){
-								e = e.readEmployee();
+								employeeList1.add(e.readEmployee());
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							//customerObj = customerObj.readCustomer();
 							//objOs.writeObject(customerObj);
 							objOs.writeObject(responseList1);
-							objOs.writeObject(employeeList);
+							objOs.writeObject(employeeList1);
 							logger.info("Past Complaints of a customer fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View a Complaint of a Customer")) {
@@ -235,42 +237,46 @@ public class Server {
 						}
 						else if (action.equalsIgnoreCase("View Payment Complaints")) {
 							complaintList = complaintObj.readAll();
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for (Complaint c : complaintList){
-								if(!c.getComplaintType().equalsIgnoreCase("Payment")){
-									complaintList.remove(c);
+								if(c.getComplaintType().equalsIgnoreCase("Payment")){
+									complaintList1.add(c);
 								}
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							logger.info("Payment Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Internet Complaints")) {
 							complaintList = complaintObj.readAll();
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for (Complaint c : complaintList){
-								if(!c.getComplaintType().equalsIgnoreCase("Internet")){
-									complaintList.remove(c);
+								if(c.getComplaintType().equalsIgnoreCase("Internet")){
+									complaintList1.add(c);
 								}
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							logger.info("Internet Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Cable Complaints")) {
 							complaintList = complaintObj.readAll();
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for (Complaint c : complaintList){
-								if(!c.getComplaintType().equalsIgnoreCase("Cable")){
-									complaintList.remove(c);
+								if(c.getComplaintType().equalsIgnoreCase("Cable")){
+									complaintList1.add(c);
 								}
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							logger.info("Cable Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Other Complaints")) {
 							complaintList = complaintObj.readAll();
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for (Complaint c : complaintList){
-								if(!c.getComplaintType().equalsIgnoreCase("Other")){
-									complaintList.remove(c);
+								if(c.getComplaintType().equalsIgnoreCase("Other")){
+									complaintList1.add(c);
 								}
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							logger.info("Other Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Complaint details and Customer account info")) {
@@ -317,12 +323,13 @@ public class Server {
 						else if (action.equalsIgnoreCase("View Complaints assigned to a Technician")) {
 							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
+							List<Complaint> complaintList1 = new ArrayList<>();
 							for(Complaint c: complaintList){
-								if(!c.getStaffID().equals(complaintObj.getStaffID())){
-									complaintList.remove(c);
+								if(c.getStaffID().equals(complaintObj.getStaffID())){
+									complaintList1.add(c);
 								}
 							}
-							objOs.writeObject(complaintList);
+							objOs.writeObject(complaintList1);
 							logger.info("Complaints assigned to a particular technician are fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("Technician Create Response")) {
