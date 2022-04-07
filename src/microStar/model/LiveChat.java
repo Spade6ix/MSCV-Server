@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import microStar.factory.DBConnectorFactory;
 import org.apache.logging.log4j.LogManager;
@@ -100,15 +101,21 @@ public class LiveChat implements Serializable{
         }
     }
 
-    public ResultSet readAll(){
+    public ArrayList<LiveChat> readAll(){
         ResultSet result = null;
+        ArrayList<LiveChat> liveChatArrayList = new ArrayList<>();
+        LiveChat obj = new LiveChat();
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM LiveChat";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
-            /*while(result.next()){
-                System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getDouble(3) + " " + result.getString(4) + "\n");
-            }*/
+            while(result.next()){
+                obj.setLiveChatID(result.getInt(1));
+                obj.setCustomerID(result.getString(2));
+                obj.setStaffID(result.getString(3));
+                obj.setMessage(result.getString(4));
+                liveChatArrayList.add(obj);
+            }
             logger.info("All records in LiveChat Table read");
         }
         catch(SQLException s){
@@ -119,7 +126,7 @@ public class LiveChat implements Serializable{
             e.printStackTrace();
             logger.error("Exception occurred");
         }
-        return result;
+        return liveChatArrayList;
     }
 
     public void delete(int liveChatID) {

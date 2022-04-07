@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import microStar.factory.DBConnectorFactory;
 import org.apache.logging.log4j.LogManager;
@@ -74,15 +75,19 @@ public class CustomerEmail implements Serializable {
         }
     }
 
-    public ResultSet readAll(){
+    public ArrayList<CustomerEmail> readAll(){
         ResultSet result = null;
+        ArrayList<CustomerEmail> customerEmailArrayList = new ArrayList<>();
+        CustomerEmail customerEmail = new CustomerEmail();
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM CustomerEmail";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
-            /*while(result.next()){
-                System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getDouble(3) + " " + result.getString(4) + "\n");
-            }*/
+            while(result.next()){
+                customerEmail.setEmail(result.getString(1));
+                customerEmail.setCustomerID(result.getString(2));
+                customerEmailArrayList.add(customerEmail);
+            }
             logger.info("All records in CustomerEmail Table read");
         }
         catch(SQLException s){
@@ -93,7 +98,7 @@ public class CustomerEmail implements Serializable {
             e.printStackTrace();
             logger.error("Exception occurred");
         }
-        return result;
+        return customerEmailArrayList;
     }
 
     public void updateEmail(String prevEmail, String newEmail, String customerID){

@@ -91,7 +91,6 @@ public class Server {
 			Payment paymentObj = new Payment();
 			Query queryObj = new Query();
 			Response responseObj = new Response();
-			ResultSet result;
 			boolean login;
 			String customerID;
 			try {
@@ -103,14 +102,16 @@ public class Server {
                         List<CustomerEmail> customerEmailList = new ArrayList<>();
                         List<CustomerPhone> customerPhoneList = new ArrayList<>();
                         List<Employee> employeeList = new ArrayList<>();
+                        List<Query> queryList = new ArrayList<>();
+                        List<LiveChat> liveChatList = new ArrayList<>();
 						action = (String) objIs.readObject();
 						if (action.equalsIgnoreCase("Customer Login")) {
 							customerObj = (Customer) objIs.readObject();
 							login = customerObj.authenticate();
 							customerObj = customerObj.readCustomer();
 							objOs.writeObject(login);
-							objOs.writeObject(customerObj);
 							if(login){
+								objOs.writeObject(customerObj);
 								logger.info("Customer Authenticated");
 							}
 							else{
@@ -122,8 +123,8 @@ public class Server {
 							login = employeeObj.authenticate();
 							employeeObj = employeeObj.readEmployee();
 							objOs.writeObject(login);
-							objOs.writeObject(employeeObj);
 							if(login){
+								objOs.writeObject(employeeObj);
 								logger.info("Employee Authenticated");
 							}
 							else{
@@ -138,9 +139,9 @@ public class Server {
 						}
 						else if (action.equalsIgnoreCase("Make Query")) {
 							customerID = (String) objIs.readObject();
-							result = queryObj.read(customerID);
-							if(result!=null){
-								objOs.writeObject(result);
+							queryObj = queryObj.read(customerID);
+							if(queryObj!=null){
+								objOs.writeObject(queryObj);
 								logger.info("Query executed");
 							}
 							else{
@@ -207,12 +208,13 @@ public class Server {
 						else if (action.equalsIgnoreCase("View All Payments made by a Customer")) {
 							customerObj = (Customer) objIs.readObject();
 							paymentList = paymentObj.readAll();
+							List<Payment> payments = new ArrayList<>();
 							for(Payment p : paymentList){
-								if(!customerObj.getCustomerID().equals(p.getCustomerID())){
-									paymentList.remove(p);
+								if(customerObj.getCustomerID().equals(p.getCustomerID())){
+									payments.add(p);
 								}
 							}
-							objOs.writeObject(paymentList);
+							objOs.writeObject(payments);
 							logger.info("Past payments of a customer fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Number of Resolved & Unresolved Complaints")) {
@@ -276,22 +278,8 @@ public class Server {
 						    complaintObj = complaintObj.readComplaint();
 						    customerObj.setCustomerID(complaintObj.getCustomerID());
 						    customerObj = customerObj.readCustomer();
-						    result = customerPhoneObj.readAll();
-							while(result.next()){
-								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
-									customerPhoneObj.setCustomerID(result.getString(2));
-									customerPhoneObj.setPhone(result.getString(1));
-									customerPhoneList.add(customerPhoneObj);
-								}
-							}
-							result = customerEmailObj.readAll();
-							while(result.next()){
-								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
-									customerEmailObj.setCustomerID(result.getString(2));
-									customerEmailObj.setEmail(result.getString(1));
-									customerEmailList.add(customerEmailObj);
-								}
-							}
+						    customerPhoneList = customerPhoneObj.readAll();
+							customerEmailList = customerEmailObj.readAll();
 							objOs.writeObject(customerObj);
 							objOs.writeObject(complaintObj);
 							objOs.writeObject(customerPhoneList);
@@ -301,22 +289,8 @@ public class Server {
 						else if (action.equalsIgnoreCase("View Customer account info")) {
 							customerObj = (Customer) objIs.readObject();
 							customerObj = customerObj.readCustomer();
-							result = customerPhoneObj.readAll();
-							while(result.next()){
-								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
-									customerPhoneObj.setCustomerID(result.getString(2));
-									customerPhoneObj.setPhone(result.getString(1));
-									customerPhoneList.add(customerPhoneObj);
-								}
-							}
-							result = customerEmailObj.readAll();
-							while(result.next()){
-								if(result.getString(2).equalsIgnoreCase(customerObj.getCustomerID())){
-									customerEmailObj.setCustomerID(result.getString(2));
-									customerEmailObj.setEmail(result.getString(1));
-									customerEmailList.add(customerEmailObj);
-								}
-							}
+							customerPhoneList = customerPhoneObj.readAll();
+							customerEmailList = customerEmailObj.readAll();
 							objOs.writeObject(customerObj);
 							objOs.writeObject(customerPhoneList);
 							objOs.writeObject(customerEmailList);

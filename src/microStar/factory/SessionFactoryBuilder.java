@@ -15,6 +15,7 @@ public class SessionFactoryBuilder {
     private static final Logger logger = LogManager.getLogger(SessionFactoryBuilder.class);
 
     public static SessionFactory getSessionFactory(){
+        //session = null;
         if(session == null){
             try{
                 session = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Customer.class)

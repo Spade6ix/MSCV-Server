@@ -12,6 +12,7 @@ public class DBConnectorFactory {
     private static final Logger logger = LogManager.getLogger(DBConnectorFactory.class);
 
     public static Connection getDatabaseConnection(){
+        connection = null;
         if (connection == null) {
             try{
                 String url = "jdbc:mysql://localhost:3306/MicroStar_CableVision";

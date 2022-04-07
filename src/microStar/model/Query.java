@@ -2,7 +2,9 @@ package microStar.model;
 
 import java.io.Serializable;
 import java.sql.*;
+import java.util.ArrayList;
 
+import net.bytebuddy.implementation.bytecode.collection.ArrayLength;
 import org.apache.logging.log4j.LogManager;
 
 import microStar.factory.DBConnectorFactory;
@@ -100,15 +102,21 @@ public class Query implements Serializable{
         }
     }
 
-    public ResultSet readAll(){
+    public ArrayList<Query> readAll(){
         ResultSet result = null;
+        ArrayList<Query> queryArrayList = new ArrayList<>();
+        Query obj = new Query();
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM Query";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
-            /*while(result.next()){
-                System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getDouble(3) + " " + result.getString(4) + "\n");
-            }*/
+            while(result.next()){
+                obj.setCustomerID(result.getString(1));
+                obj.setPaymentStatus(result.getString(2));
+                obj.setAmountDue(result.getDouble(3));
+                obj.setDueDate(result.getString(4));
+                queryArrayList.add(obj);
+            }
             logger.info("All records in Query Table read");
         }
         catch(SQLException s){
@@ -119,18 +127,23 @@ public class Query implements Serializable{
             e.printStackTrace();
             logger.error("Exception occurred");
         }
-        return result;
+        return queryArrayList;
     }
 
-    public ResultSet read(String customerID){
+    public Query read(String customerID){
         ResultSet result = null;
+        Query obj = new Query();
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
-            String sql = "SELECT FROM Query WHERE customerID = ?";
+            String sql = "SELECT * FROM Query WHERE customerID = ?";
             PreparedStatement ps = c.prepareStatement(sql);
+            ps.setString(1,customerID);
             result = ps.executeQuery();
-            /*while(result.next()){
-                System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getDouble(3) + " " + result.getString(4) + "\n");
-            }*/
+            while (result.next()){
+                obj.setCustomerID(result.getString(1));
+                obj.setPaymentStatus(result.getString(2));
+                obj.setAmountDue(result.getDouble(3));
+                obj.setDueDate(result.getString(4));
+            }
             logger.info("Record in Query Table read");
         }
         catch(SQLException s){
@@ -141,7 +154,7 @@ public class Query implements Serializable{
             e.printStackTrace();
             logger.error("Exception occurred");
         }
-        return result;
+        return obj;
     }
 
     public void updatePaymentStatus(String customerID, String paymentStatus){
