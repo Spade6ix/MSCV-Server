@@ -231,3 +231,4 @@
 [FATAL] 2022-04-08 21:13:38.244 [Thread-2] Server - IOException occurred
 [FATAL] 2022-04-08 21:13:38.244 [Thread-3] Server - IOException occurred
 [FATAL] 2022-04-08 21:13:38.245 [Thread-0] Server - IOException occurred
+[INFO ] 2022-04-08 21:56:54.605 [main] Server - Server has started!!!

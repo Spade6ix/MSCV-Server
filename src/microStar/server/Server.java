@@ -238,45 +238,65 @@ public class Server {
 						else if (action.equalsIgnoreCase("View Payment Complaints")) {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
+                            List<Customer> customerList = new ArrayList<>();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Payment")){
 									complaintList1.add(c);
+									customerObj.setCustomerID(c.getCustomerID());
+									customerObj = customerObj.readCustomer();
+									customerList.add(customerObj);
 								}
 							}
 							objOs.writeObject(complaintList1);
+                            objOs.writeObject(customerList);
 							logger.info("Payment Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Internet Complaints")) {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
+                            List<Customer> customerList = new ArrayList<>();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Internet")){
 									complaintList1.add(c);
+                                    customerObj.setCustomerID(c.getCustomerID());
+                                    customerObj = customerObj.readCustomer();
+                                    customerList.add(customerObj);
 								}
 							}
 							objOs.writeObject(complaintList1);
+                            objOs.writeObject(customerList);
 							logger.info("Internet Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Cable Complaints")) {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
+                            List<Customer> customerList = new ArrayList<>();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Cable")){
 									complaintList1.add(c);
+                                    customerObj.setCustomerID(c.getCustomerID());
+                                    customerObj = customerObj.readCustomer();
+                                    customerList.add(customerObj);
 								}
 							}
 							objOs.writeObject(complaintList1);
+                            objOs.writeObject(customerList);
 							logger.info("Cable Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Other Complaints")) {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
+                            List<Customer> customerList = new ArrayList<>();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Other")){
 									complaintList1.add(c);
+                                    customerObj.setCustomerID(c.getCustomerID());
+                                    customerObj = customerObj.readCustomer();
+                                    customerList.add(customerObj);
 								}
 							}
 							objOs.writeObject(complaintList1);
+                            objOs.writeObject(customerList);
 							logger.info("Other Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Complaint details and Customer account info")) {
