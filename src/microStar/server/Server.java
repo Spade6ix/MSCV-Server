@@ -314,6 +314,7 @@ public class Server {
 							String staffID;
 							complaintObj = (Complaint) objIs.readObject();
 							staffID = complaintObj.getStaffID();
+							System.out.println(staffID);
 							complaintObj = complaintObj.readComplaint();
 							complaintObj.setStaffID(staffID);
 							complaintObj.updateTechnician();
