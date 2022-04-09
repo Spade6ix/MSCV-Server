@@ -148,7 +148,7 @@ public class Server {
 								logger.info("Customer associated with ID has no Query Info in the Database");
 							}
 						}
-						else if (action.equalsIgnoreCase("View All Responses to a complaint")) {
+						else if (action.equalsIgnoreCase("View All Responses to a Complaint")) {
 							complaintObj = (Complaint) objIs.readObject();
 							responseList = responseObj.readAll();
 							List<Response> responseList1 = new ArrayList<>();

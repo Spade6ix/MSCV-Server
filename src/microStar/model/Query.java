@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.sql.*;
 import java.util.ArrayList;
 
-import net.bytebuddy.implementation.bytecode.collection.ArrayLength;
+import net.bytebuddy.implementation.bytecode.collection.*;
 import org.apache.logging.log4j.LogManager;
 
 import microStar.factory.DBConnectorFactory;
