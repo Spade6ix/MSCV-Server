@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2022 at 05:49 AM
+-- Generation Time: Apr 09, 2022 at 03:19 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `microstar_cablevision`
 --
-CREATE DATABASE IF NOT EXISTS `microstar_cablevision` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `microstar_cablevision`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,6 @@ USE `microstar_cablevision`;
 -- Table structure for table `complaint`
 --
 
-DROP TABLE IF EXISTS `complaint`;
 CREATE TABLE `complaint` (
   `complaintID` int(11) NOT NULL,
   `complaintType` varchar(20) NOT NULL,
@@ -39,13 +36,25 @@ CREATE TABLE `complaint` (
   `staffID` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `complaint`
+--
+
+INSERT INTO `complaint` (`complaintID`, `complaintType`, `complaintDetails`, `status`, `customerID`, `staffID`) VALUES
+(1, 'Internet', 'Internet not working', 'U', 'B4955', NULL),
+(2, 'Cable ', 'Cable not working', 'U', 'C3726', 'X074'),
+(3, 'Payment', 'Payment not showing up on System', 'U', 'J6889', 'E135'),
+(4, 'Other', 'I have been receiving emails from MicroStar that my account information is compromised. The email as', 'U', 'Z9359', NULL),
+(5, 'Internet', 'Internet is very slow in my area', 'U', 'J6889', 'K928'),
+(6, 'Cable', 'Cable has been down in my area for the past 5 days', 'U', 'C3726', NULL),
+(7, 'Payment', 'I made payments for this month but they were not showing up on the system', 'U', 'P4386', NULL);
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `customer`
 --
 
-DROP TABLE IF EXISTS `customer`;
 CREATE TABLE `customer` (
   `customerID` varchar(10) NOT NULL,
   `password` varchar(20) NOT NULL,
@@ -71,7 +80,6 @@ INSERT INTO `customer` (`customerID`, `password`, `firstName`, `lastName`, `addr
 -- Table structure for table `customeremail`
 --
 
-DROP TABLE IF EXISTS `customeremail`;
 CREATE TABLE `customeremail` (
   `email` varchar(50) NOT NULL,
   `customerID` varchar(10) NOT NULL
@@ -96,7 +104,6 @@ INSERT INTO `customeremail` (`email`, `customerID`) VALUES
 -- Table structure for table `customerphone`
 --
 
-DROP TABLE IF EXISTS `customerphone`;
 CREATE TABLE `customerphone` (
   `phone` varchar(20) NOT NULL,
   `customerID` varchar(10) NOT NULL
@@ -122,7 +129,6 @@ INSERT INTO `customerphone` (`phone`, `customerID`) VALUES
 -- Table structure for table `employee`
 --
 
-DROP TABLE IF EXISTS `employee`;
 CREATE TABLE `employee` (
   `staffID` varchar(10) NOT NULL,
   `password` varchar(20) NOT NULL,
@@ -149,7 +155,6 @@ INSERT INTO `employee` (`staffID`, `password`, `firstName`, `lastName`, `job`) V
 -- Table structure for table `livechat`
 --
 
-DROP TABLE IF EXISTS `livechat`;
 CREATE TABLE `livechat` (
   `liveChatID` int(11) NOT NULL,
   `customerID` varchar(10) NOT NULL,
@@ -157,13 +162,25 @@ CREATE TABLE `livechat` (
   `message` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `livechat`
+--
+
+INSERT INTO `livechat` (`liveChatID`, `customerID`, `staffID`, `message`) VALUES
+(1, 'B4955', 'E135', 'Hello, Good afternoon'),
+(2, 'C3726', 'X074', 'Hello'),
+(3, 'J6889', 'K928', 'You\'re Welcome'),
+(4, 'Z9359', 'U386', 'Give me a sec'),
+(5, 'C3726', 'U386', 'Thank you'),
+(6, 'P4386', 'N319', 'Hi'),
+(7, 'B4955', 'N319', 'Hi');
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `payment`
 --
 
-DROP TABLE IF EXISTS `payment`;
 CREATE TABLE `payment` (
   `paymentID` varchar(20) NOT NULL,
   `customerID` varchar(10) NOT NULL,
@@ -193,7 +210,6 @@ INSERT INTO `payment` (`paymentID`, `customerID`, `dateOfPayment`, `amountPaid`)
 -- Table structure for table `query`
 --
 
-DROP TABLE IF EXISTS `query`;
 CREATE TABLE `query` (
   `customerID` varchar(10) NOT NULL,
   `paymentStatus` varchar(30) NOT NULL,
@@ -218,7 +234,6 @@ INSERT INTO `query` (`customerID`, `paymentStatus`, `amountDue`, `dueDate`) VALU
 -- Table structure for table `response`
 --
 
-DROP TABLE IF EXISTS `response`;
 CREATE TABLE `response` (
   `responseID` int(11) NOT NULL,
   `complaintID` int(11) NOT NULL,
@@ -227,6 +242,19 @@ CREATE TABLE `response` (
   `responseDateTime` datetime NOT NULL,
   `staffID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `response`
+--
+
+INSERT INTO `response` (`responseID`, `complaintID`, `proposedDateOfVisit`, `responseDetails`, `responseDateTime`, `staffID`) VALUES
+(1, 1, '2022-04-21 21:59:09', 'soon fix', '2022-04-08 01:55:27', 'X074'),
+(2, 2, NULL, 'We will soon contact you and send a technician', '2022-04-08 14:28:19', 'U386'),
+(3, 3, NULL, 'A technician will soon contact you', '2022-04-07 11:38:19', 'F102'),
+(4, 4, NULL, 'I would like to advise you that the email you have received is a phishing email. Please ignore it', '2022-04-01 15:34:09', 'F102'),
+(5, 5, '2022-04-13 12:28:19', 'Will contact you soon', '2022-04-05 11:11:19', 'K928'),
+(6, 6, NULL, 'We will soon rectify that issue', '2022-04-02 13:13:23', 'N319'),
+(7, 7, NULL, 'Will soon rectify', '2022-04-06 09:28:19', 'U386');
 
 --
 -- Indexes for dumped tables
@@ -303,19 +331,19 @@ ALTER TABLE `response`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `complaintID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `complaintID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `livechat`
 --
 ALTER TABLE `livechat`
-  MODIFY `liveChatID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `liveChatID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `response`
 --
 ALTER TABLE `response`
-  MODIFY `responseID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `responseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
@@ -358,13 +386,6 @@ ALTER TABLE `payment`
 --
 ALTER TABLE `query`
   ADD CONSTRAINT `fk_Customer_Query` FOREIGN KEY (`customerID`) REFERENCES `customer` (`customerID`);
-
---
--- Constraints for table `response`
---
-ALTER TABLE `response`
-  ADD CONSTRAINT `fk_Complaint_Response` FOREIGN KEY (`complaintID`) REFERENCES `complaint` (`complaintID`),
-  ADD CONSTRAINT `fk_Employee_Response` FOREIGN KEY (`staffID`) REFERENCES `employee` (`staffID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
