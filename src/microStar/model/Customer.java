@@ -112,7 +112,7 @@ public class Customer implements Serializable {
     }
 
     public void create(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         try{
             transaction = session.beginTransaction();
@@ -138,7 +138,7 @@ public class Customer implements Serializable {
     }
 
     public void update(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -169,7 +169,7 @@ public class Customer implements Serializable {
     }
 
     public List<Customer> readAll(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         List<Customer> customerList = new ArrayList<Customer>();
 
@@ -206,7 +206,7 @@ public class Customer implements Serializable {
     }
 
     public Customer readCustomer(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         Customer customerObj = new Customer();
 
@@ -235,7 +235,7 @@ public class Customer implements Serializable {
     }
 
     public void delete(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -263,7 +263,7 @@ public class Customer implements Serializable {
     }
 
     public boolean authenticate(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         boolean login = false;
 

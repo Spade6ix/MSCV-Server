@@ -122,7 +122,7 @@ public class Complaint implements Serializable {
     }
 
     public void create(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         try{
             transaction = session.beginTransaction();
@@ -148,7 +148,7 @@ public class Complaint implements Serializable {
     }
 
     public void updateTechnician(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -177,7 +177,7 @@ public class Complaint implements Serializable {
     }
 
     public void updateStatus(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -206,7 +206,7 @@ public class Complaint implements Serializable {
     }
 
     public List<Complaint> readAll(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         List<Complaint> complaintList = new ArrayList<Complaint>();
 
@@ -243,7 +243,7 @@ public class Complaint implements Serializable {
     }
 
     public Complaint readComplaint(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         Complaint complaintObj = new Complaint();
 
@@ -272,7 +272,7 @@ public class Complaint implements Serializable {
     }
 
     public void delete(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{

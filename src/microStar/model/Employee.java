@@ -261,7 +261,7 @@ public class Employee implements Serializable {
     }
 
     public boolean authenticate(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         boolean login = false;
 

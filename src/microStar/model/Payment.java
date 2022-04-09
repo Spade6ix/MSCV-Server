@@ -97,7 +97,7 @@ public class Payment implements Serializable {
     }
 
     public void create(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         try{
             transaction = session.beginTransaction();
@@ -123,7 +123,7 @@ public class Payment implements Serializable {
     }
 
     public void update(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -153,7 +153,7 @@ public class Payment implements Serializable {
     }
 
     public List<Payment> readAll(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         List<Payment> paymentList = new ArrayList<Payment>();
 
@@ -190,7 +190,7 @@ public class Payment implements Serializable {
     }
 
     public Payment readPayment(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         Payment paymentObj = new Payment();
 
@@ -219,7 +219,7 @@ public class Payment implements Serializable {
     }
 
     public void delete(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{

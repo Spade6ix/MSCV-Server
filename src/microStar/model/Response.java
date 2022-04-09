@@ -126,7 +126,7 @@ public class Response implements Serializable {
     }
 
     public void create(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         try{
             transaction = session.beginTransaction();
@@ -152,7 +152,7 @@ public class Response implements Serializable {
     }
 
     public void update(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
@@ -183,7 +183,7 @@ public class Response implements Serializable {
     }
 
     public List<Response> readAll(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         List<Response> responseList = new ArrayList<Response>();
 
@@ -220,7 +220,7 @@ public class Response implements Serializable {
     }
 
     public Response readResponse(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
         Response responseObj = new Response();
 
@@ -249,7 +249,7 @@ public class Response implements Serializable {
     }
 
     public void delete(){
-        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();;
+        Session session = SessionFactoryBuilder.getSessionFactory().getCurrentSession();
         Transaction transaction = null;
 
         try{
