@@ -1,44 +1,31 @@
-[INFO ] 2022-04-09 08:02:26.330 [main] Server - Server has started!!!
-[INFO ] 2022-04-09 08:02:27.736 [main] Server - Server is starting a thread for a Client
-[ERROR] 2022-04-09 08:03:36.092 [Thread-0] SessionFactoryBuilder - Hibernate Exception Occurred
-[FATAL] 2022-04-09 08:03:36.092 [Thread-0] Server - NullPointerException occurred
-[INFO ] 2022-04-09 08:09:12.413 [main] Server - Server has started!!!
-[INFO ] 2022-04-09 08:09:30.592 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-09 08:26:49.313 [main] Server - Server has started!!!
-[INFO ] 2022-04-09 08:27:02.923 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-09 08:29:29.929 [main] Server - Server has started!!!
-[INFO ] 2022-04-09 08:29:48.016 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-09 08:30:18.999 [Thread-0] SessionFactoryBuilder - Session established
-[INFO ] 2022-04-09 08:30:19.858 [Thread-0] Employee - Employee authenticated
-[INFO ] 2022-04-09 08:30:19.958 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-09 08:30:19.974 [Thread-0] Server - Employee Authenticated
-[INFO ] 2022-04-09 08:30:20.005 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-09 08:30:20.005 [Thread-0] Server - Employee is a Technician
-[INFO ] 2022-04-09 08:30:30.310 [Thread-0] Complaint - All Complaints read
-[FATAL] 2022-04-09 08:30:30.310 [Thread-0] Server - NullPointerException occurred
-[INFO ] 2022-04-09 08:32:05.473 [main] Server - Server has started!!!
-[INFO ] 2022-04-09 08:32:16.216 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-09 08:32:41.402 [Thread-0] SessionFactoryBuilder - Session established
-[INFO ] 2022-04-09 08:32:41.836 [Thread-0] Employee - Employee authenticated
-[INFO ] 2022-04-09 08:32:41.914 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-09 08:32:41.929 [Thread-0] Server - Employee Authenticated
-[INFO ] 2022-04-09 08:32:41.945 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-09 08:32:41.945 [Thread-0] Server - Employee is not a Technician
-[INFO ] 2022-04-09 08:32:48.000 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-09 08:32:48.140 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:48.156 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:48.172 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:48.219 [Thread-0] Server - Internet Complaints fetched successfully
-[FATAL] 2022-04-09 08:32:48.265 [Thread-0] Server - ClassCast Exception occurred
-[INFO ] 2022-04-09 08:32:56.878 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-09 08:32:56.894 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:56.909 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:56.925 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:32:56.925 [Thread-0] Server - Internet Complaints fetched successfully
-[FATAL] 2022-04-09 08:32:56.925 [Thread-0] Server - ClassCast Exception occurred
-[INFO ] 2022-04-09 08:33:50.049 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-09 08:33:50.049 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:33:50.065 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:33:50.080 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-09 08:33:50.080 [Thread-0] Server - Internet Complaints fetched successfully
-[FATAL] 2022-04-09 08:33:50.080 [Thread-0] Server - ClassCast Exception occurred
+[INFO ] 2022-04-11 21:32:02.841 [main] Server - Server has started!!!
+[INFO ] 2022-04-11 21:32:50.877 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-11 21:33:49.026 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-11 21:33:50.151 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-11 21:33:50.214 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-11 21:33:50.229 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-11 21:33:58.718 [Thread-0] Payment - All Payments read
+[INFO ] 2022-04-11 21:33:58.764 [Thread-0] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-11 21:34:28.478 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-11 21:34:28.541 [Thread-0] Query - Record in Query Table read
+[INFO ] 2022-04-11 21:34:28.603 [Thread-0] Server - Query executed
+[INFO ] 2022-04-11 21:34:37.433 [Thread-0] Complaint - All Complaints read
+[ERROR] 2022-04-11 21:34:37.980 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:37.996 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:37.996 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.011 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.058 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.074 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.089 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.105 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.136 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.136 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.168 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.168 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.183 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.199 [Thread-0] Response - Transaction rolled back
+[ERROR] 2022-04-11 21:34:38.214 [Thread-0] Response - RunTime exception occurred
+[ERROR] 2022-04-11 21:34:38.214 [Thread-0] Response - Transaction rolled back
+[INFO ] 2022-04-11 21:34:38.659 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-11 21:34:38.678 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-11 21:34:38.694 [Thread-0] Server - Past Complaints of a customer fetched successfully
