@@ -220,6 +220,7 @@ public class Server {
 							logger.info("Past payments of a customer fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Number of Resolved & Unresolved Complaints")) {
+							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							int resolved = 0;
 							int unresolved = 0;
@@ -236,6 +237,7 @@ public class Server {
 							logger.info("Number of resolved and unresolved complaints calculated successfully");
 						}
 						else if (action.equalsIgnoreCase("View Payment Complaints")) {
+							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
@@ -252,6 +254,7 @@ public class Server {
 							logger.info("Payment Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Internet Complaints")) {
+							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
@@ -268,6 +271,7 @@ public class Server {
 							logger.info("Internet Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Cable Complaints")) {
+							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
@@ -284,6 +288,7 @@ public class Server {
 							logger.info("Cable Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Other Complaints")) {
+							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();

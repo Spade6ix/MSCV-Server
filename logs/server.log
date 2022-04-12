@@ -1,31 +1,33 @@
-[INFO ] 2022-04-11 21:32:02.841 [main] Server - Server has started!!!
-[INFO ] 2022-04-11 21:32:50.877 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-11 21:33:49.026 [Thread-0] SessionFactoryBuilder - Session established
-[INFO ] 2022-04-11 21:33:50.151 [Thread-0] Customer - Customer authenticated
-[INFO ] 2022-04-11 21:33:50.214 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-11 21:33:50.229 [Thread-0] Server - Customer Authenticated
-[INFO ] 2022-04-11 21:33:58.718 [Thread-0] Payment - All Payments read
-[INFO ] 2022-04-11 21:33:58.764 [Thread-0] Server - Past payments of a customer fetched successfully
-[INFO ] 2022-04-11 21:34:28.478 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-11 21:34:28.541 [Thread-0] Query - Record in Query Table read
-[INFO ] 2022-04-11 21:34:28.603 [Thread-0] Server - Query executed
-[INFO ] 2022-04-11 21:34:37.433 [Thread-0] Complaint - All Complaints read
-[ERROR] 2022-04-11 21:34:37.980 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:37.996 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:37.996 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.011 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.058 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.074 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.089 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.105 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.136 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.136 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.168 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.168 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.183 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.199 [Thread-0] Response - Transaction rolled back
-[ERROR] 2022-04-11 21:34:38.214 [Thread-0] Response - RunTime exception occurred
-[ERROR] 2022-04-11 21:34:38.214 [Thread-0] Response - Transaction rolled back
-[INFO ] 2022-04-11 21:34:38.659 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-11 21:34:38.678 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-11 21:34:38.694 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[FATAL] 2022-04-12 15:21:52.592 [Thread-0] Server - IOException occurred
+[INFO ] 2022-04-12 15:36:21.420 [main] Server - Server has started!!!
+[INFO ] 2022-04-12 15:36:57.015 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-12 15:38:18.196 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-12 15:38:20.962 [Thread-0] Employee - Employee authenticated
+[INFO ] 2022-04-12 15:38:21.055 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-12 15:38:21.071 [Thread-0] Server - Employee Authenticated
+[INFO ] 2022-04-12 15:38:21.087 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-12 15:38:21.102 [Thread-0] Server - Employee is not a Technician
+[INFO ] 2022-04-12 15:38:26.557 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:26.947 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:26.963 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:26.979 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:27.088 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-12 15:38:27.151 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:27.182 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:27.182 [Thread-0] Server - Cable Complaints fetched successfully
+[INFO ] 2022-04-12 15:38:54.589 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:54.620 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:54.636 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:54.652 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:54.652 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-12 15:38:54.683 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:54.698 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:54.698 [Thread-0] Server - Cable Complaints fetched successfully
+[INFO ] 2022-04-12 15:38:57.449 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:57.464 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:57.480 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:57.496 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:57.496 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-12 15:38:57.527 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-12 15:38:57.527 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-12 15:38:57.543 [Thread-0] Server - Cable Complaints fetched successfully
