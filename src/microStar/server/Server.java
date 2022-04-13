@@ -351,8 +351,10 @@ public class Server {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
 							for(Complaint c: complaintList){
-								if(c.getStaffID().equals(complaintObj.getStaffID())){
-									complaintList1.add(c);
+								if(c.getStaffID() != null){
+									if(c.getStaffID().equals(complaintObj.getStaffID())){
+										complaintList1.add(c);
+									}
 								}
 							}
 							objOs.writeObject(complaintList1);
