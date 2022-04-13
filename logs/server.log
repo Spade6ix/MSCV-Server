@@ -51,3 +51,91 @@
 [INFO ] 2022-04-13 01:42:58.747 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
 [INFO ] 2022-04-13 01:42:58.794 [Thread-0] Complaint - All Complaints read
 [INFO ] 2022-04-13 01:42:58.794 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-13 02:19:30.031 [main] Server - Server has started!!!
+[INFO ] 2022-04-13 02:21:38.726 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-13 02:22:13.837 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-13 02:22:14.571 [Thread-0] Employee - Employee authenticated
+[INFO ] 2022-04-13 02:22:14.665 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-13 02:22:14.681 [Thread-0] Server - Employee Authenticated
+[INFO ] 2022-04-13 02:22:14.712 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-13 02:22:14.712 [Thread-0] Server - Employee is not a Technician
+[INFO ] 2022-04-13 02:22:19.069 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:19.147 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.162 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:22:19.287 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.303 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:22:19.334 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.350 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.381 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.444 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-13 02:22:19.475 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:19.475 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.475 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:22:19.490 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.490 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:22:19.506 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.522 [Thread-0] Server - Cable Complaints fetched successfully
+[INFO ] 2022-04-13 02:22:19.569 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:19.569 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.569 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:22:19.584 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.584 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:22:19.600 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.615 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.615 [Thread-0] Server - Payment Complaints fetched successfully
+[INFO ] 2022-04-13 02:22:19.647 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:19.662 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.662 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:22:19.678 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:22:19.678 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:22:19.694 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:22:19.709 [Thread-0] Server - Other Complaints fetched successfully
+[INFO ] 2022-04-13 02:22:19.959 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:19.975 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-13 02:22:20.006 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:22:20.006 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-13 02:33:35.215 [main] Server - Server has started!!!
+[INFO ] 2022-04-13 02:34:01.566 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-13 02:34:42.100 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-13 02:34:44.468 [Thread-0] Employee - Employee authenticated
+[INFO ] 2022-04-13 02:34:45.015 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-13 02:34:45.015 [Thread-0] Server - Employee Authenticated
+[INFO ] 2022-04-13 02:34:45.437 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-13 02:34:45.437 [Thread-0] Server - Employee is not a Technician
+[INFO ] 2022-04-13 02:34:49.574 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:49.621 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.621 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:34:49.683 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.683 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:34:49.699 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:49.761 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:49.777 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:49.793 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-13 02:34:49.855 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:49.871 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.871 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:34:49.886 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.886 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:34:49.902 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:49.918 [Thread-0] Server - Cable Complaints fetched successfully
+[INFO ] 2022-04-13 02:34:49.980 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:49.980 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.980 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:34:49.996 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:49.996 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:34:50.027 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:50.043 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:50.043 [Thread-0] Server - Payment Complaints fetched successfully
+[INFO ] 2022-04-13 02:34:50.089 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:50.105 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:50.105 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-13 02:34:50.121 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-13 02:34:50.121 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-13 02:34:50.152 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-13 02:34:50.152 [Thread-0] Server - Other Complaints fetched successfully
+[INFO ] 2022-04-13 02:34:50.589 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:50.589 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-13 02:34:50.668 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-13 02:34:50.668 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-13 02:36:24.155 [Thread-0] Complaint - Complaint read
+[FATAL] 2022-04-13 02:36:24.155 [Thread-0] Server - NullPointerException occurred
