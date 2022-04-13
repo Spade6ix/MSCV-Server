@@ -241,16 +241,34 @@ public class Server {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
+                            List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+                            customerPhoneList = customerPhoneObj.readAll();
+                            customerEmailList = customerEmailObj.readAll();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Payment")){
 									complaintList1.add(c);
 									customerObj.setCustomerID(c.getCustomerID());
 									customerObj = customerObj.readCustomer();
 									customerList.add(customerObj);
+                                    for(CustomerPhone cp : customerPhoneList){
+                                        if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerPhoneList1.add(cp);
+                                            break;
+                                        }
+                                    }
+                                    for(CustomerEmail ce : customerEmailList){
+                                        if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerEmailList1.add(ce);
+                                            break;
+                                        }
+                                    }
 								}
 							}
 							objOs.writeObject(complaintList1);
                             objOs.writeObject(customerList);
+                            objOs.writeObject(customerPhoneList1);
+                            objOs.writeObject(customerEmailList1);
 							logger.info("Payment Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Internet Complaints")) {
@@ -258,16 +276,34 @@ public class Server {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
+                            List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+                            customerPhoneList = customerPhoneObj.readAll();
+                            customerEmailList = customerEmailObj.readAll();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Internet")){
 									complaintList1.add(c);
                                     customerObj.setCustomerID(c.getCustomerID());
                                     customerObj = customerObj.readCustomer();
                                     customerList.add(customerObj);
+                                    for(CustomerPhone cp : customerPhoneList){
+                                        if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerPhoneList1.add(cp);
+                                            break;
+                                        }
+                                    }
+                                    for(CustomerEmail ce : customerEmailList){
+                                        if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerEmailList1.add(ce);
+                                            break;
+                                        }
+                                    }
 								}
 							}
 							objOs.writeObject(complaintList1);
                             objOs.writeObject(customerList);
+                            objOs.writeObject(customerPhoneList1);
+                            objOs.writeObject(customerEmailList1);
 							logger.info("Internet Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Cable Complaints")) {
@@ -275,16 +311,34 @@ public class Server {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
+                            List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+                            customerPhoneList = customerPhoneObj.readAll();
+                            customerEmailList = customerEmailObj.readAll();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Cable")){
 									complaintList1.add(c);
                                     customerObj.setCustomerID(c.getCustomerID());
                                     customerObj = customerObj.readCustomer();
                                     customerList.add(customerObj);
+                                    for(CustomerPhone cp : customerPhoneList){
+                                        if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerPhoneList1.add(cp);
+                                            break;
+                                        }
+                                    }
+                                    for(CustomerEmail ce : customerEmailList){
+                                        if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerEmailList1.add(ce);
+                                            break;
+                                        }
+                                    }
 								}
 							}
 							objOs.writeObject(complaintList1);
                             objOs.writeObject(customerList);
+                            objOs.writeObject(customerPhoneList1);
+                            objOs.writeObject(customerEmailList1);
 							logger.info("Cable Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Other Complaints")) {
@@ -292,16 +346,34 @@ public class Server {
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
                             List<Customer> customerList = new ArrayList<>();
+                            List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+                            customerPhoneList = customerPhoneObj.readAll();
+                            customerEmailList = customerEmailObj.readAll();
 							for (Complaint c : complaintList){
 								if(c.getComplaintType().equalsIgnoreCase("Other")){
 									complaintList1.add(c);
                                     customerObj.setCustomerID(c.getCustomerID());
                                     customerObj = customerObj.readCustomer();
                                     customerList.add(customerObj);
+                                    for(CustomerPhone cp : customerPhoneList){
+                                        if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerPhoneList1.add(cp);
+                                            break;
+                                        }
+                                    }
+                                    for(CustomerEmail ce : customerEmailList){
+                                        if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                            customerEmailList1.add(ce);
+                                            break;
+                                        }
+                                    }
 								}
 							}
 							objOs.writeObject(complaintList1);
                             objOs.writeObject(customerList);
+                            objOs.writeObject(customerPhoneList1);
+                            objOs.writeObject(customerEmailList1);
 							logger.info("Other Complaints fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Complaint details and Customer account info")) {
@@ -311,10 +383,22 @@ public class Server {
 						    customerObj = customerObj.readCustomer();
 						    customerPhoneList = customerPhoneObj.readAll();
 							customerEmailList = customerEmailObj.readAll();
+							List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+							for(CustomerPhone cp : customerPhoneList){
+							    if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                    customerPhoneList1.add(cp);
+                                }
+                            }
+                            for(CustomerEmail ce : customerEmailList){
+                                if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                    customerEmailList1.add(ce);
+                                }
+                            }
 							objOs.writeObject(customerObj);
 							objOs.writeObject(complaintObj);
-							objOs.writeObject(customerPhoneList);
-							objOs.writeObject(customerEmailList);
+							objOs.writeObject(customerPhoneList1);
+							objOs.writeObject(customerEmailList1);
 							logger.info("Complaint details and associated Customer info fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("View Customer account info")) {
@@ -322,9 +406,21 @@ public class Server {
 							customerObj = customerObj.readCustomer();
 							customerPhoneList = customerPhoneObj.readAll();
 							customerEmailList = customerEmailObj.readAll();
+                            List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+                            List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+                            for(CustomerPhone cp : customerPhoneList){
+                                if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+                                    customerPhoneList1.add(cp);
+                                }
+                            }
+                            for(CustomerEmail ce : customerEmailList){
+                                if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+                                    customerEmailList1.add(ce);
+                                }
+                            }
 							objOs.writeObject(customerObj);
-							objOs.writeObject(customerPhoneList);
-							objOs.writeObject(customerEmailList);
+							objOs.writeObject(customerPhoneList1);
+							objOs.writeObject(customerEmailList1);
 							logger.info("Customer info fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("CSR Create Response")) {
