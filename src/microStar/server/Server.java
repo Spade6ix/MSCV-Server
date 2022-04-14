@@ -434,9 +434,11 @@ public class Server {
 						else if (action.equalsIgnoreCase("Add a Technician ID to a complaint")) {
 							String staffID;
 							complaintObj = (Complaint) objIs.readObject();
+							System.err.println(complaintObj.getComplaintID());
 							staffID = complaintObj.getStaffID();
 							System.out.println(staffID);
 							complaintObj = complaintObj.readComplaint();
+							System.err.println(complaintObj.getComplaintID());
 							complaintObj.setStaffID(staffID);
 							complaintObj.updateTechnician();
 							objOs.writeObject(true);
@@ -446,14 +448,37 @@ public class Server {
 							complaintObj = (Complaint) objIs.readObject();
 							complaintList = complaintObj.readAll();
 							List<Complaint> complaintList1 = new ArrayList<>();
+							List<Customer> customerList = new ArrayList<>();
+							List<CustomerPhone> customerPhoneList1 = new ArrayList<>();
+							List<CustomerEmail> customerEmailList1 = new ArrayList<>();
+							customerPhoneList = customerPhoneObj.readAll();
+							customerEmailList = customerEmailObj.readAll();
 							for(Complaint c: complaintList){
 								if(c.getStaffID() != null){
 									if(c.getStaffID().equals(complaintObj.getStaffID())){
 										complaintList1.add(c);
+										customerObj.setCustomerID(c.getCustomerID());
+										customerObj = customerObj.readCustomer();
+										customerList.add(customerObj);
+										for(CustomerPhone cp : customerPhoneList){
+											if(cp.getCustomerID().equals(customerObj.getCustomerID())){
+												customerPhoneList1.add(cp);
+												break;
+											}
+										}
+										for(CustomerEmail ce : customerEmailList){
+											if(ce.getCustomerID().equals(customerObj.getCustomerID())){
+												customerEmailList1.add(ce);
+												break;
+											}
+										}
 									}
 								}
 							}
 							objOs.writeObject(complaintList1);
+							objOs.writeObject(customerList);
+							objOs.writeObject(customerPhoneList1);
+							objOs.writeObject(customerEmailList1);
 							logger.info("Complaints assigned to a particular technician are fetched successfully");
 						}
 						else if (action.equalsIgnoreCase("Technician Create Response")) {

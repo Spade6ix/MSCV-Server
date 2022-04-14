@@ -1,9 +1,6 @@
 package microStar.factory;
 
-import microStar.model.Customer;
-import microStar.model.Employee;
-import microStar.model.Complaint;
-import microStar.model.Payment;
+import microStar.model.*;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -22,6 +19,7 @@ public class SessionFactoryBuilder {
                         .addAnnotatedClass(Employee.class)
                         .addAnnotatedClass(Complaint.class)
                         .addAnnotatedClass(Payment.class)
+                        .addAnnotatedClass(Response.class)
                         .buildSessionFactory();
                 logger.info("Session established");
             }
