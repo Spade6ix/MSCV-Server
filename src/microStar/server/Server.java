@@ -168,8 +168,8 @@ public class Server {
 							List<Employee> employeeList1 = new ArrayList<>();
 							LocalDateTime max = LocalDateTime.MIN;
 							List<Complaint> complaintList1 = new ArrayList<>();
+							responseList = responseObj.readAll();
 							for(Complaint c : complaintList){
-								responseList = responseObj.readAll();
 								if(c.getCustomerID().equals(customerObj.getCustomerID())) {
 									complaintList1.add(c);
 									for(Response r : responseList){
@@ -183,6 +183,7 @@ public class Server {
 											responseObj = r;
 										}
 									}
+									responseList2.clear();
 									responseList1.add(responseObj);
 									employeeObj.setStaffID(responseObj.getStaffID());
 									employeeList.add(employeeObj);
@@ -438,8 +439,8 @@ public class Server {
 							staffID = complaintObj.getStaffID();
 							System.out.println(staffID);
 							complaintObj = complaintObj.readComplaint();
-							System.err.println(complaintObj.getComplaintID());
 							complaintObj.setStaffID(staffID);
+							System.err.println(complaintObj.getComplaintID());
 							complaintObj.updateTechnician();
 							objOs.writeObject(true);
 							logger.info("Complaint updated successfully");
@@ -525,14 +526,21 @@ public class Server {
 						else if (action.equalsIgnoreCase("Is Employee a Technician?")){
 							employeeObj = (Employee) objIs.readObject();
 							employeeObj = employeeObj.readEmployee();
-							if(employeeObj.getJob() == 'T'){
-								objOs.writeObject(true);
-								logger.info("Employee is a Technician");
+							if (employeeObj != null){
+								if(employeeObj.getJob() == 'T'){
+									objOs.writeObject(true);
+									logger.info("Employee is a Technician");
+								}
+								else{
+									objOs.writeObject(false);
+									logger.info("Employee is not a Technician");
+								}
 							}
 							else{
 								objOs.writeObject(false);
 								logger.info("Employee is not a Technician");
 							}
+
 						}
 						/*else{
 							objOs.close();
