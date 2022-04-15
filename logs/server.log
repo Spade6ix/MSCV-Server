@@ -254,3 +254,97 @@
 [INFO ] 2022-04-15 02:06:38.782 [main] Server - Server is starting a thread for a Client
 [INFO ] 2022-04-15 02:07:27.487 [main] Server - Server is starting a thread for a Client
 [INFO ] 2022-04-15 02:08:16.325 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:41:40.173 [main] Server - Server has started!!!
+[INFO ] 2022-04-15 04:41:52.977 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:42:31.482 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-15 04:42:31.864 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-15 04:42:31.900 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-15 04:42:31.916 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-15 04:46:54.540 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:47:17.446 [Thread-2] Customer - Customer authenticated
+[INFO ] 2022-04-15 04:47:17.466 [Thread-2] Customer - Customer read
+[INFO ] 2022-04-15 04:47:17.468 [Thread-2] Server - Customer Authenticated
+[INFO ] 2022-04-15 04:51:05.484 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:51:20.388 [Thread-3] Customer - Customer authenticated
+[INFO ] 2022-04-15 04:51:20.412 [Thread-3] Customer - Customer read
+[INFO ] 2022-04-15 04:51:20.415 [Thread-3] Server - Customer Authenticated
+[INFO ] 2022-04-15 04:53:12.836 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:53:24.417 [Thread-4] Customer - Customer authenticated
+[INFO ] 2022-04-15 04:53:24.430 [Thread-4] Customer - Customer read
+[INFO ] 2022-04-15 04:53:24.432 [Thread-4] Server - Customer Authenticated
+[INFO ] 2022-04-15 04:58:15.770 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 04:58:27.254 [Thread-5] Customer - Customer authenticated
+[INFO ] 2022-04-15 04:58:27.313 [Thread-5] Customer - Customer read
+[INFO ] 2022-04-15 04:58:27.314 [Thread-5] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:02:34.949 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:02:50.545 [Thread-6] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:02:50.792 [Thread-6] Customer - Customer read
+[INFO ] 2022-04-15 05:02:50.793 [Thread-6] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:03:11.535 [Thread-6] Complaint - All Complaints read
+[INFO ] 2022-04-15 05:03:17.638 [Thread-6] Response - All Responses read
+[INFO ] 2022-04-15 05:03:17.719 [Thread-6] Employee - Employee read
+[INFO ] 2022-04-15 05:03:17.737 [Thread-6] Employee - Employee read
+[INFO ] 2022-04-15 05:03:17.845 [Thread-6] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-15 05:03:26.919 [Thread-6] Payment - All Payments read
+[INFO ] 2022-04-15 05:03:26.926 [Thread-6] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-15 05:03:30.770 [Thread-6] Complaint - All Complaints read
+[INFO ] 2022-04-15 05:03:30.984 [Thread-6] Response - All Responses read
+[INFO ] 2022-04-15 05:03:31.095 [Thread-6] Employee - Employee read
+[INFO ] 2022-04-15 05:03:31.228 [Thread-6] Employee - Employee read
+[INFO ] 2022-04-15 05:03:31.232 [Thread-6] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-15 05:05:25.903 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:05:42.159 [Thread-7] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:05:42.428 [Thread-7] Customer - Customer read
+[INFO ] 2022-04-15 05:05:42.429 [Thread-7] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:12:21.580 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:12:44.874 [Thread-8] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:12:45.449 [Thread-8] Customer - Customer read
+[INFO ] 2022-04-15 05:12:45.450 [Thread-8] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:13:02.335 [Thread-8] Payment - All Payments read
+[INFO ] 2022-04-15 05:13:02.338 [Thread-8] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-15 05:18:53.538 [main] Server - Server has started!!!
+[INFO ] 2022-04-15 05:19:05.677 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:20:51.455 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-15 05:20:52.045 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:20:52.081 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-15 05:20:52.087 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:21:09.302 [Thread-0] Payment - All Payments read
+[INFO ] 2022-04-15 05:21:09.348 [Thread-0] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-15 05:25:17.890 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:25:48.043 [Thread-2] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:25:48.067 [Thread-2] Customer - Customer read
+[INFO ] 2022-04-15 05:25:48.069 [Thread-2] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:25:59.213 [Thread-2] Payment - All Payments read
+[INFO ] 2022-04-15 05:25:59.215 [Thread-2] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-15 05:27:05.659 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:27:24.089 [Thread-3] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:27:24.110 [Thread-3] Customer - Customer read
+[INFO ] 2022-04-15 05:27:24.111 [Thread-3] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:29:22.567 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:29:39.456 [Thread-4] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:29:39.682 [Thread-4] Customer - Customer read
+[INFO ] 2022-04-15 05:29:39.683 [Thread-4] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:48:02.651 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:49:16.506 [Thread-5] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:49:17.063 [Thread-5] Customer - Customer read
+[INFO ] 2022-04-15 05:49:17.065 [Thread-5] Server - Customer Authenticated
+[FATAL] 2022-04-15 05:56:22.641 [main] Server - IOException Occurred
+[INFO ] 2022-04-15 05:56:23.178 [main] Driver - Database Connections Closed
+[INFO ] 2022-04-15 05:56:51.310 [main] Server - Server has started!!!
+[INFO ] 2022-04-15 05:57:06.950 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:57:38.644 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-15 05:57:38.966 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:57:39.003 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-15 05:57:39.007 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-15 05:59:16.569 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 05:59:36.839 [Thread-2] Customer - Customer authenticated
+[INFO ] 2022-04-15 05:59:36.858 [Thread-2] Customer - Customer read
+[INFO ] 2022-04-15 05:59:36.859 [Thread-2] Server - Customer Authenticated
+[INFO ] 2022-04-15 06:03:11.547 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 06:03:22.263 [Thread-3] Customer - Customer authenticated
+[INFO ] 2022-04-15 06:03:22.288 [Thread-3] Customer - Customer read
+[INFO ] 2022-04-15 06:03:22.288 [Thread-3] Server - Customer Authenticated
+[INFO ] 2022-04-15 06:06:16.554 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-15 06:06:25.573 [Thread-4] Customer - Customer authenticated
+[INFO ] 2022-04-15 06:06:25.607 [Thread-4] Customer - Customer read
+[INFO ] 2022-04-15 06:06:25.608 [Thread-4] Server - Customer Authenticated
