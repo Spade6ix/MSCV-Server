@@ -1,60 +1,465 @@
-[INFO ] 2022-04-14 04:24:08.610 [Thread-0] Response - Response created and saved
-[INFO ] 2022-04-14 04:24:11.467 [Thread-0] Server - Technician created a Response
-[INFO ] 2022-04-14 04:26:08.606 [main] Server - Server has started!!!
-[INFO ] 2022-04-14 04:27:38.405 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-14 04:28:10.269 [Thread-0] SessionFactoryBuilder - Session established
-[ERROR] 2022-04-14 04:28:10.871 [Thread-0] Employee - RunTime exception occurred
-[ERROR] 2022-04-14 04:28:10.871 [Thread-0] Employee - Transaction rolled back
-[INFO ] 2022-04-14 04:28:10.886 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-14 04:28:10.902 [Thread-0] Server - Employee Provided incorrect credentials
-[INFO ] 2022-04-14 04:28:25.206 [Thread-0] Employee - Employee authenticated
-[INFO ] 2022-04-14 04:28:25.253 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-14 04:28:25.253 [Thread-0] Server - Employee Authenticated
-[INFO ] 2022-04-14 04:28:25.269 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-14 04:28:25.269 [Thread-0] Server - Employee is not a Technician
-[INFO ] 2022-04-14 04:28:39.562 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:39.723 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:39.875 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-14 04:28:40.026 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.268 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-14 04:28:40.390 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.397 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.412 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.507 [Thread-0] Server - Internet Complaints fetched successfully
-[INFO ] 2022-04-14 04:28:40.568 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:40.580 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.620 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-14 04:28:40.631 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.631 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-14 04:28:40.689 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.701 [Thread-0] Server - Cable Complaints fetched successfully
-[INFO ] 2022-04-14 04:28:40.742 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:40.752 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.752 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-14 04:28:40.762 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.762 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-14 04:28:40.782 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.800 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.802 [Thread-0] Server - Payment Complaints fetched successfully
-[INFO ] 2022-04-14 04:28:40.853 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:40.873 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.873 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-14 04:28:40.883 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-14 04:28:40.883 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-14 04:28:40.904 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-14 04:28:40.914 [Thread-0] Server - Other Complaints fetched successfully
-[INFO ] 2022-04-14 04:28:42.207 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:42.215 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
-[INFO ] 2022-04-14 04:28:42.247 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-14 04:28:42.247 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
-[INFO ] 2022-04-14 04:32:15.557 [main] Server - Server has started!!!
-[INFO ] 2022-04-14 04:32:30.642 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-14 04:32:52.097 [Thread-0] SessionFactoryBuilder - Session established
-[ERROR] 2022-04-14 04:32:52.468 [Thread-0] Employee - RunTime exception occurred
-[ERROR] 2022-04-14 04:32:52.499 [Thread-0] Employee - Transaction rolled back
-[INFO ] 2022-04-14 04:32:52.514 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-14 04:32:52.537 [Thread-0] Server - Employee Provided incorrect credentials
-[ERROR] 2022-04-14 04:33:04.144 [Thread-0] Employee - RunTime exception occurred
-[ERROR] 2022-04-14 04:33:04.148 [Thread-0] Employee - Transaction rolled back
-[INFO ] 2022-04-14 04:33:04.164 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-14 04:33:04.164 [Thread-0] Server - Employee Provided incorrect credentials
+[FATAL] 2022-04-14 16:14:36.374 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:36.374 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:37.376 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:37.376 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:37.376 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:37.376 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:38.379 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:38.379 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:38.379 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:38.379 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:39.381 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:39.381 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:39.381 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:39.382 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:39.382 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:40.383 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:40.383 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:40.384 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:40.384 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:41.386 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:41.386 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:41.386 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:41.386 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:42.389 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:42.389 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:42.389 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:42.389 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:43.391 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:43.391 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:43.391 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:43.392 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:44.392 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:44.392 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:44.392 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:44.392 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:44.392 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.396 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.396 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.396 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.397 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.397 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:45.397 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:46.398 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:46.398 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:46.399 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:46.399 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.401 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.401 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.401 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.402 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.402 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.403 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.403 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.403 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.406 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:47.406 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:48.406 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:48.406 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:48.406 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:48.407 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:49.408 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:49.408 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:49.408 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:49.409 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:49.409 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:50.410 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:50.410 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:50.410 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:50.411 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:51.411 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:51.411 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:51.411 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:51.412 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:52.413 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:52.413 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:52.413 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:52.413 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:53.416 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:53.416 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:53.416 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:53.416 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:54.419 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:54.419 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:54.419 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:54.419 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:54.420 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.422 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.422 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.423 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.424 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.425 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.425 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:55.425 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:56.424 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:56.424 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:56.424 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:56.425 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:57.425 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:57.425 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:57.426 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:57.426 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:58.427 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:58.427 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:58.427 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:58.428 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:58.428 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:59.429 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:59.429 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:59.429 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:14:59.429 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:00.431 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:00.432 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:00.432 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:00.433 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:01.434 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:01.434 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:01.434 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:01.434 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:02.437 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:02.437 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:02.437 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:02.437 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:03.441 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:03.441 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:03.441 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:03.441 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:03.441 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:04.445 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:04.445 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:04.445 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:04.445 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:05.447 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:05.447 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:05.447 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:05.447 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:05.447 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:06.449 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:06.449 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:06.449 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:06.449 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:07.451 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:07.451 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:07.451 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:07.452 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:08.453 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:08.454 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:08.454 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:08.454 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:09.455 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:09.456 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:09.456 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:09.456 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:10.458 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:10.458 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:10.458 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:10.458 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:10.459 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:11.459 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:11.459 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:11.460 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:11.460 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:12.461 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:12.461 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:12.461 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:12.461 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:13.463 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:13.464 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:13.464 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:13.464 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:14.464 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:14.464 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:14.464 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:14.465 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:15.466 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:15.466 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:15.467 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:15.467 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:15.467 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:16.469 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:16.470 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:16.471 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:16.472 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:17.472 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:17.472 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:17.472 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:17.472 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:18.473 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:18.473 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:18.474 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:18.474 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:18.474 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:19.476 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:19.476 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:19.476 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:19.476 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:20.478 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:20.478 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:20.479 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:20.479 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:21.481 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:21.481 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:21.482 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:21.482 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:22.483 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:22.483 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:22.483 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:22.484 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:23.487 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:23.487 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:23.488 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:23.488 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:23.488 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:24.490 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:24.490 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:24.490 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:24.490 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:25.492 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:25.492 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:25.492 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:25.492 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:26.494 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:26.494 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:26.494 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:26.494 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.497 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.497 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.497 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.498 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.498 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.498 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.498 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:27.499 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:28.501 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:28.501 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:28.501 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:28.501 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:28.501 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:29.503 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:29.503 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:29.504 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:29.504 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:30.505 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:30.505 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:30.505 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:30.505 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:31.507 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:31.507 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:31.507 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:31.508 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:32.511 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:32.511 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:32.511 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:32.511 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:33.514 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:33.514 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:33.514 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:33.514 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:33.514 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:34.516 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:34.516 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:34.517 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:34.517 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:35.518 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:35.519 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:35.519 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:35.519 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:36.519 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:36.519 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:36.519 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:36.520 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.521 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.522 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.523 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.524 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.524 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:37.525 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:38.526 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:38.526 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:38.526 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:38.526 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:38.526 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:39.528 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:39.528 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:39.528 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:39.528 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:40.530 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:40.531 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:40.531 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:40.531 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:41.533 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:41.533 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:41.534 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:41.534 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:42.536 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:42.536 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:42.559 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:42.559 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:42.559 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:43.539 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:43.539 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:43.539 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:43.539 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:44.540 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:44.540 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:44.540 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:44.540 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:45.543 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:45.543 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:45.543 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:45.544 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:46.545 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:46.545 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:46.632 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:46.632 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:46.632 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:47.636 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:47.636 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:47.636 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:47.636 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:48.548 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:48.548 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:48.549 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:48.562 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:49.552 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:49.552 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:49.733 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:49.733 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:50.554 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:50.554 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:50.555 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:50.555 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:51.556 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:51.556 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:51.557 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:51.557 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:51.639 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:52.558 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:52.559 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:52.559 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:52.559 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:53.560 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:53.560 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:53.593 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:53.593 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.563 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.563 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.563 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.563 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.563 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.564 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:54.564 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:55.566 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:55.772 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:55.772 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:55.772 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:56.569 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:56.569 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:56.569 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:56.843 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:57.572 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:57.572 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:57.573 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:57.573 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:58.575 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:58.575 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:58.575 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:58.576 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:58.576 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:59.657 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:59.657 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:59.657 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:15:59.672 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:00.581 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:00.581 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:00.581 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:00.581 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:01.582 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:01.582 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:01.583 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:01.583 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:02.585 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:02.585 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:02.585 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:02.634 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.586 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.586 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.587 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.587 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.587 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:03.587 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:04.589 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:04.589 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:04.589 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:04.589 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:05.591 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:05.591 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:05.591 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:05.591 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:06.593 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:06.747 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:06.748 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:06.748 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:07.596 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:07.596 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:07.597 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:07.597 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:08.599 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:08.599 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:08.599 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.143 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.218 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.601 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.602 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.602 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.602 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.602 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.603 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.603 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.603 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.603 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.604 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.604 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:09.660 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:10.606 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:10.606 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:10.606 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:10.606 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:11.609 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:11.609 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:11.609 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:11.609 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:12.610 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:12.623 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:12.623 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:12.623 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:13.612 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:13.612 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:13.612 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:13.612 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:14.709 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:14.709 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:14.709 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:14.709 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:14.710 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:15.617 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:15.617 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:15.618 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:15.618 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:15.775 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:16.728 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:16.728 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:16.728 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:16.728 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:17.621 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:17.621 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:17.622 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:17.622 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:18.623 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:18.623 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:18.624 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:18.624 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:19.624 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:19.624 [Thread-0] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:19.624 [Thread-2] Server - IOException occurred
+[FATAL] 2022-04-14 16:16:19.624 [Thread-0] Server - IOException occurred

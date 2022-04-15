@@ -30,6 +30,8 @@ import microStar.model.LiveChat;
 import microStar.model.Payment;
 import microStar.model.Query;
 import microStar.model.Response;
+import microStar.model.VideoFrame;
+
 import org.hibernate.type.LocalDateTimeType;
 
 public class Server {
@@ -37,6 +39,8 @@ public class Server {
     
     private ServerSocket serverSocket;
 	private Socket connectionSocket;
+	
+	private ArrayList<ClientHandler> clientList = new ArrayList<ClientHandler>();
 	
     
 	public Server() {
@@ -50,6 +54,7 @@ public class Server {
 				//JOptionPane.showMessageDialog(null,"Connection Established","Server Connection Status",JOptionPane.INFORMATION_MESSAGE);
 				ClientHandler client = new ClientHandler(connectionSocket);
 				client.start();
+				clientList.add(client);
 			}
 		}
 		catch(IOException x){
@@ -62,6 +67,9 @@ public class Server {
 		Socket socket;
 		ObjectOutputStream objOs;
 		ObjectInputStream objIs;
+		
+		Customer customerObj;
+		Employee employeeObj;
 
 		public ClientHandler(Socket socket){
 			try{
@@ -82,11 +90,12 @@ public class Server {
 		@Override
 		public void run() {
 			String action = "";
+			VideoFrame videoFrameObj = new VideoFrame();
 			Complaint complaintObj = new Complaint();
-			Customer customerObj = new Customer();
+			customerObj = new Customer();
 			CustomerEmail customerEmailObj = new CustomerEmail();
 			CustomerPhone customerPhoneObj = new CustomerPhone();
-			Employee employeeObj = new Employee();
+			employeeObj = new Employee();
 			LiveChat liveChatObj = new LiveChat();
 			Payment paymentObj = new Payment();
 			Query queryObj = new Query();
@@ -542,6 +551,22 @@ public class Server {
 							}
 
 						}
+						else if (action.equalsIgnoreCase("Transmit video frame")){
+							videoFrameObj = (VideoFrame) objIs.readObject();
+							String id = videoFrameObj.getDestination();
+							
+							for (ClientHandler c: clientList) {
+								if (c.customerObj.getCustomerID() == id) {
+									c.objOs.writeObject(videoFrameObj);
+								}
+								
+								if (c.employeeObj.getStaffID() == id) {
+									c.objOs.writeObject(videoFrameObj);
+								}
+							}
+							
+
+						}
 						/*else{
 							objOs.close();
 							objIs.close();
@@ -581,6 +606,7 @@ public class Server {
 				DBConnectorFactory.closeDatabaseConnection();
 			}
 		}
+		
 	}
 
 }
