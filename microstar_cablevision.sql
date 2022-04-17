@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2022 at 03:19 AM
+-- Generation Time: Apr 18, 2022 at 01:46 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -41,13 +41,16 @@ CREATE TABLE `complaint` (
 --
 
 INSERT INTO `complaint` (`complaintID`, `complaintType`, `complaintDetails`, `status`, `customerID`, `staffID`) VALUES
-(1, 'Internet', 'Internet not working', 'U', 'B4955', NULL),
+(1, 'Internet', 'Internet not working', 'U', 'B4955', 'K928'),
 (2, 'Cable ', 'Cable not working', 'U', 'C3726', 'X074'),
 (3, 'Payment', 'Payment not showing up on System', 'U', 'J6889', 'E135'),
 (4, 'Other', 'I have been receiving emails from MicroStar that my account information is compromised. The email as', 'U', 'Z9359', NULL),
 (5, 'Internet', 'Internet is very slow in my area', 'U', 'J6889', 'K928'),
 (6, 'Cable', 'Cable has been down in my area for the past 5 days', 'U', 'C3726', NULL),
-(7, 'Payment', 'I made payments for this month but they were not showing up on the system', 'U', 'P4386', NULL);
+(7, 'Payment', 'I made payments for this month but they were not showing up on the system', 'U', 'P4386', NULL),
+(8, 'Internet', 'Internet bill was too high last month', 'U', 'B4955', NULL),
+(9, 'Internet', 'Test', 'U', 'B4955', NULL),
+(10, 'Internet', 'Test', 'U', 'B4955', NULL);
 
 -- --------------------------------------------------------
 
@@ -159,21 +162,22 @@ CREATE TABLE `livechat` (
   `liveChatID` int(11) NOT NULL,
   `customerID` varchar(10) NOT NULL,
   `staffID` varchar(10) NOT NULL,
-  `message` varchar(1000) NOT NULL
+  `message` varchar(1000) NOT NULL,
+  `sentbyCustomer` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `livechat`
 --
 
-INSERT INTO `livechat` (`liveChatID`, `customerID`, `staffID`, `message`) VALUES
-(1, 'B4955', 'E135', 'Hello, Good afternoon'),
-(2, 'C3726', 'X074', 'Hello'),
-(3, 'J6889', 'K928', 'You\'re Welcome'),
-(4, 'Z9359', 'U386', 'Give me a sec'),
-(5, 'C3726', 'U386', 'Thank you'),
-(6, 'P4386', 'N319', 'Hi'),
-(7, 'B4955', 'N319', 'Hi');
+INSERT INTO `livechat` (`liveChatID`, `customerID`, `staffID`, `message`, `sentbyCustomer`) VALUES
+(1, 'B4955', 'E135', 'Hello, Good afternoon', 1),
+(2, 'C3726', 'X074', 'Hello', 1),
+(3, 'J6889', 'K928', 'You\'re Welcome', 0),
+(4, 'Z9359', 'U386', 'Give me a sec', 0),
+(5, 'C3726', 'U386', 'Thank you', 1),
+(6, 'P4386', 'N319', 'Hi', 1),
+(7, 'B4955', 'N319', 'Hi', 1);
 
 -- --------------------------------------------------------
 
@@ -254,7 +258,12 @@ INSERT INTO `response` (`responseID`, `complaintID`, `proposedDateOfVisit`, `res
 (4, 4, NULL, 'I would like to advise you that the email you have received is a phishing email. Please ignore it', '2022-04-01 15:34:09', 'F102'),
 (5, 5, '2022-04-13 12:28:19', 'Will contact you soon', '2022-04-05 11:11:19', 'K928'),
 (6, 6, NULL, 'We will soon rectify that issue', '2022-04-02 13:13:23', 'N319'),
-(7, 7, NULL, 'Will soon rectify', '2022-04-06 09:28:19', 'U386');
+(7, 7, NULL, 'Will soon rectify', '2022-04-06 09:28:19', 'U386'),
+(9, 2, '2022-04-17 09:00:00', 'I will be visiting your address on the proposed date to rectify the issue.', '2022-04-13 20:58:34', 'X074'),
+(10, 1, '2022-04-21 10:00:00', 'Will visit your place of residence on the proposed date', '2022-04-14 03:56:46', 'K928'),
+(13, 5, '2022-04-28 01:00:00', 'Will contact you tomorrow', '2022-04-14 04:11:55', 'K928'),
+(14, 1, '2022-04-28 09:00:00', 'Testing', '2022-04-14 04:13:24', 'K928'),
+(15, 5, '2022-05-05 05:00:00', 'Testing', '2022-04-14 04:24:08', 'K928');
 
 --
 -- Indexes for dumped tables
@@ -331,7 +340,7 @@ ALTER TABLE `response`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `complaintID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `complaintID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `livechat`
@@ -343,7 +352,7 @@ ALTER TABLE `livechat`
 -- AUTO_INCREMENT for table `response`
 --
 ALTER TABLE `response`
-  MODIFY `responseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `responseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
