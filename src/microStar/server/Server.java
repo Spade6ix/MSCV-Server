@@ -507,7 +507,7 @@ public class Server {
 						else if (action.equalsIgnoreCase("Employee Create LiveChat")) {
 							if(LocalTime.now().getHour()>=8 && LocalTime.now().getHour()<=19){
 								liveChatObj = (LiveChat) objIs.readObject();
-								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage());
+								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage(), liveChatObj.isSentByCustomer());
 								objOs.writeObject(true);
 								logger.info("Live Chat sent to Database successfully");
 							}
@@ -519,7 +519,7 @@ public class Server {
 						else if (action.equalsIgnoreCase("Customer Create LiveChat")) {
 							if(LocalTime.now().getHour()>=8 && LocalTime.now().getHour()<=19){
 								liveChatObj = (LiveChat) objIs.readObject();
-								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage());
+								liveChatObj.create(liveChatObj.getCustomerID(), liveChatObj.getStaffID(), liveChatObj.getMessage(), liveChatObj.isSentByCustomer());
 								objOs.writeObject(true);
 								logger.info("Live Chat sent to Database successfully");
 							}
@@ -571,7 +571,36 @@ public class Server {
 									break;
 								}
 							}
-							
+							logger.info("Video Frame/s Transmitted");
+						}
+						else if (action.equalsIgnoreCase("Customer ReadAll LiveChat")){
+							customerObj = (Customer) objIs.readObject();
+							liveChatList = liveChatObj.readAll();
+							employeeList = employeeObj.readAll();
+							List<LiveChat> liveChatList1 = new ArrayList<>();
+							for(LiveChat l : liveChatList){
+								if(l.getCustomerID().equals(customerObj.getCustomerID())){
+									liveChatList1.add(l);
+								}
+							}
+							objOs.writeObject(liveChatList1);
+							objOs.writeObject(employeeList);
+							logger.info("All LiveChats for Customer read");
+						}
+						else if (action.equalsIgnoreCase("Employee ReadAll LiveChat")){
+							employeeObj = (Employee) objIs.readObject();
+							liveChatList = liveChatObj.readAll();
+							List<Customer> customerList = new ArrayList<>();
+							customerList = customerObj.readAll();
+							List<LiveChat> liveChatList1 = new ArrayList<>();
+							for(LiveChat l : liveChatList){
+								if(l.getStaffID().equals(employeeObj.getStaffID())){
+									liveChatList1.add(l);
+								}
+							}
+							objOs.writeObject(liveChatList1);
+							objOs.writeObject(customerList);
+							logger.info("All LiveChats for Employee read");
 						}
 						/*else{
 							objOs.close();
