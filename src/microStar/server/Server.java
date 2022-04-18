@@ -570,6 +570,7 @@ public class Server {
 						else if (action.equalsIgnoreCase("Customer ReadAll LiveChat")){
 							customerObj = (Customer) objIs.readObject();
 							liveChatList = liveChatObj.readAll();
+							employeeList = employeeObj.readAll();
 							List<LiveChat> liveChatList1 = new ArrayList<>();
 							for(LiveChat l : liveChatList){
 								if(l.getCustomerID().equals(customerObj.getCustomerID())){
@@ -577,11 +578,14 @@ public class Server {
 								}
 							}
 							objOs.writeObject(liveChatList1);
+							objOs.writeObject(employeeList);
 							logger.info("All LiveChats for Customer read");
 						}
 						else if (action.equalsIgnoreCase("Employee ReadAll LiveChat")){
 							employeeObj = (Employee) objIs.readObject();
 							liveChatList = liveChatObj.readAll();
+							List<Customer> customerList = new ArrayList<>();
+							customerList = customerObj.readAll();
 							List<LiveChat> liveChatList1 = new ArrayList<>();
 							for(LiveChat l : liveChatList){
 								if(l.getStaffID().equals(employeeObj.getStaffID())){
@@ -589,6 +593,7 @@ public class Server {
 								}
 							}
 							objOs.writeObject(liveChatList1);
+							objOs.writeObject(customerList);
 							logger.info("All LiveChats for Employee read");
 						}
 						/*else{
