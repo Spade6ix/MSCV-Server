@@ -16,6 +16,7 @@ public class LiveChat implements Serializable{
     private String customerID; //Foreign Key
     private String staffID; //Foreign Key
     private String message;
+    private boolean sentByCustomer;
 
     private static final Logger logger = LogManager.getLogger(LiveChat.class);
 
@@ -24,13 +25,15 @@ public class LiveChat implements Serializable{
         this.customerID = " ";
         this.staffID = " ";
         this.message = " ";
+        this.sentByCustomer = false;
     }
 
-    public LiveChat(int liveChatID, String customerID, String staffID, String message){
+    public LiveChat(int liveChatID, String customerID, String staffID, String message, boolean sentByCustomer){
         this.liveChatID = liveChatID;
         this.customerID = customerID;
         this.staffID = staffID;
         this.message = message;
+        this.sentByCustomer = sentByCustomer;
     }
 
     public LiveChat(LiveChat l){
@@ -38,6 +41,7 @@ public class LiveChat implements Serializable{
         this.customerID = l.customerID;
         this.staffID = l.staffID;
         this.message = l.message;
+        this.sentByCustomer = l.sentByCustomer;
     }
 
     public void setLiveChatID(int liveChatID) {
@@ -72,22 +76,32 @@ public class LiveChat implements Serializable{
         return liveChatID;
     }
 
+    public boolean isSentByCustomer() {
+        return sentByCustomer;
+    }
+
+    public void setSentByCustomer(boolean sentByCustomer) {
+        this.sentByCustomer = sentByCustomer;
+    }
+
     @Override
     public String toString() {
         return "LiveChat{" +
                 "Customer ID: " + customerID +
                 ", Staff ID: " + staffID +
                 ", Message: " + message +
+                ", Sent By Customer? " + sentByCustomer +
                 '}';
     }
 
-    public void create(String customerID, String staffID, String message){
+    public void create(String customerID, String staffID, String message, boolean sentByCustomer){
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
-            String sql = "INSERT INTO LiveChat(customerID, staffID, message) VALUES (?,?,?)";
+            String sql = "INSERT INTO LiveChat(customerID, staffID, message, sentByCustomer) VALUES (?,?,?,?)";
             PreparedStatement ps = c.prepareStatement(sql);
             ps.setString(1,customerID);
             ps.setString(2,staffID);
             ps.setString(3,message);
+            ps.setBoolean(4,sentByCustomer);
             ps.executeUpdate();
             logger.info("Live Chat created and saved");
         }
@@ -114,6 +128,7 @@ public class LiveChat implements Serializable{
                 obj.setCustomerID(result.getString(2));
                 obj.setStaffID(result.getString(3));
                 obj.setMessage(result.getString(4));
+                obj.setSentByCustomer(result.getBoolean(5));
                 liveChatArrayList.add(obj);
             }
             logger.info("All records in LiveChat Table read");
