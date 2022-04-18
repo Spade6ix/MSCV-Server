@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 import microStar.factory.SessionFactoryBuilder;
@@ -37,14 +36,12 @@ import microStar.model.VideoFrame;
 import org.hibernate.type.LocalDateTimeType;
 
 public class Server {
-   
-
-	private static final Logger logger = LogManager.getLogger(Server.class);
+    private static final Logger logger = LogManager.getLogger(Server.class);
     
     private ServerSocket serverSocket;
 	private Socket connectionSocket;
 	
-	private  ArrayList<ClientHandler> clientList = new ArrayList<ClientHandler>();
+	private ArrayList<ClientHandler> clientList = new ArrayList<ClientHandler>();
 	
     
 	public Server() {
@@ -68,7 +65,6 @@ public class Server {
 	}
 	
 	class ClientHandler extends Thread{
-
 		Socket socket;
 		ObjectOutputStream objOs;
 		ObjectInputStream objIs;
@@ -95,6 +91,7 @@ public class Server {
 		@Override
 		public void run() {
 			String action = "";
+			VideoFrame videoFrameObj = new VideoFrame();
 			Complaint complaintObj = new Complaint();
 			customerObj = new Customer();
 			CustomerEmail customerEmailObj = new CustomerEmail();
@@ -117,9 +114,7 @@ public class Server {
                         List<Employee> employeeList = new ArrayList<>();
                         List<Query> queryList = new ArrayList<>();
                         List<LiveChat> liveChatList = new ArrayList<>();
-                        
-                        action = objIs.readObject() + "";
-                   
+						action = (String) objIs.readObject();
 						if (action.equalsIgnoreCase("Customer Login")) {
 							customerObj = (Customer) objIs.readObject();
 							login = customerObj.authenticate();
@@ -557,21 +552,21 @@ public class Server {
 							}
 
 						}
-						else if (action.equalsIgnoreCase("Transmit video frame")){			
-							ImageIcon videoFrame =  (ImageIcon) objIs.readObject();
-							String id =  (String) objIs.readObject();
-							String state =  (String) objIs.readObject();
-						
+						else if (action.equalsIgnoreCase("Transmit video frame")){
+							videoFrameObj = (VideoFrame) objIs.readObject();
+							String id = videoFrameObj.getDestination();
+							
 							for (ClientHandler c: clientList) {
-								if ((c.customerObj.getCustomerID().equals(id) || c.employeeObj.getStaffID().equals(id)) && c.isAlive() == true) {
-									c.objOs.writeObject(videoFrame);
-									c.objOs.writeObject(id);
-									c.objOs.writeObject(state);
-									c.objOs.reset();
-									break;
+								if (c.customerObj.getCustomerID() == id) {
+									c.objOs.writeObject(videoFrameObj);
+								}
+								
+								if (c.employeeObj.getStaffID() == id) {
+									c.objOs.writeObject(videoFrameObj);
 								}
 							}
 							
+
 						}
 						/*else{
 							objOs.close();

@@ -12,17 +12,13 @@ public class VideoFrame implements Serializable{
 	String source;
 	String destination;
 	ImageIcon frame;
+	boolean connected;
 	
 	public VideoFrame() {
 		source = null;
 		destination = null;
 		frame = null;
-	}
-	
-	public VideoFrame(VideoFrame obj) {
-		source = obj.getSource();
-		destination = obj.getDestination();
-		frame = obj.getFrame();
+		connected = false;
 	}
 
 	public String getSource() {
@@ -48,5 +44,15 @@ public class VideoFrame implements Serializable{
 	public void setFrame(ImageIcon frame) {
 		this.frame = frame;
 	}
+
+	public boolean getConnected() {
+		return connected;
+	}
+
+	public void setConnected(boolean connected) {
+		this.connected = connected;
+	}
+	
+	
 	
 }
