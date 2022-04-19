@@ -118,12 +118,13 @@ public class LiveChat implements Serializable{
     public ArrayList<LiveChat> readAll(){
         ResultSet result = null;
         ArrayList<LiveChat> liveChatArrayList = new ArrayList<>();
-        LiveChat obj = new LiveChat();
+        LiveChat obj;
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM LiveChat";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
             while(result.next()){
+                obj = new LiveChat();
                 obj.setLiveChatID(result.getInt(1));
                 obj.setCustomerID(result.getString(2));
                 obj.setStaffID(result.getString(3));

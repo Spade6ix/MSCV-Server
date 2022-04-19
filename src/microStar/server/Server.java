@@ -200,12 +200,19 @@ public class Server {
 									}
 									responseList2.clear();
 									responseList1.add(responseObj);
+									employeeObj = new Employee();
 									employeeObj.setStaffID(responseObj.getStaffID());
+									responseObj = new Response(0,0,null,"null",LocalDateTime.MIN,"NULL");
 									employeeList.add(employeeObj);
 								}
 							}
 							for(Employee e : employeeList){
-								employeeList1.add(e.readEmployee());
+								if(e.getStaffID().equalsIgnoreCase("NULL")){
+									employeeList1.add(new Employee());
+								}
+								else {
+									employeeList1.add(e.readEmployee());
+								}
 							}
 							objOs.writeObject(complaintList1);
 							//customerObj = customerObj.readCustomer();

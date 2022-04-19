@@ -105,12 +105,13 @@ public class Query implements Serializable{
     public ArrayList<Query> readAll(){
         ResultSet result = null;
         ArrayList<Query> queryArrayList = new ArrayList<>();
-        Query obj = new Query();
+        Query obj;
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM Query";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
             while(result.next()){
+                obj = new Query();
                 obj.setCustomerID(result.getString(1));
                 obj.setPaymentStatus(result.getString(2));
                 obj.setAmountDue(result.getDouble(3));

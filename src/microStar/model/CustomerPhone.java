@@ -78,12 +78,13 @@ public class CustomerPhone implements Serializable {
     public ArrayList<CustomerPhone> readAll(){
         ResultSet result = null;
         ArrayList<CustomerPhone> customerPhoneArrayList = new ArrayList<>();
-        CustomerPhone customerPhone = new CustomerPhone();
+        CustomerPhone customerPhone;
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM CustomerPhone";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
             while(result.next()){
+                customerPhone = new CustomerPhone();
                 customerPhone.setPhone(result.getString(1));
                 customerPhone.setCustomerID(result.getString(2));
                 customerPhoneArrayList.add(customerPhone);
