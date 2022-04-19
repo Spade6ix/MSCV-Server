@@ -78,12 +78,13 @@ public class CustomerEmail implements Serializable {
     public ArrayList<CustomerEmail> readAll(){
         ResultSet result = null;
         ArrayList<CustomerEmail> customerEmailArrayList = new ArrayList<>();
-        CustomerEmail customerEmail = new CustomerEmail();
+        CustomerEmail customerEmail;
         try(Connection c = DBConnectorFactory.getDatabaseConnection()){
             String sql = "SELECT * FROM CustomerEmail";
             PreparedStatement ps = c.prepareStatement(sql);
             result = ps.executeQuery();
             while(result.next()){
+                customerEmail = new CustomerEmail();
                 customerEmail.setEmail(result.getString(1));
                 customerEmail.setCustomerID(result.getString(2));
                 customerEmailArrayList.add(customerEmail);
