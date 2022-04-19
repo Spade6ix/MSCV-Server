@@ -1,88 +1,629 @@
-[INFO ] 2022-04-17 18:25:58.386 [main] Server - Server has started!!!
-[INFO ] 2022-04-17 18:27:30.348 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-17 18:28:52.873 [main] Server - Server has started!!!
-[INFO ] 2022-04-17 18:29:05.091 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-17 18:29:41.726 [Thread-0] SessionFactoryBuilder - Session established
-[INFO ] 2022-04-17 18:29:42.773 [Thread-0] Customer - Customer authenticated
-[INFO ] 2022-04-17 18:29:42.820 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-17 18:29:42.820 [Thread-0] Server - Customer Authenticated
-[INFO ] 2022-04-17 18:29:48.232 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:29:48.327 [Thread-0] Query - Record in Query Table read
-[INFO ] 2022-04-17 18:29:48.391 [Thread-0] Server - Query executed
-[INFO ] 2022-04-17 18:30:01.861 [Thread-0] Complaint - Complaint created and saved
-[INFO ] 2022-04-17 18:30:01.861 [Thread-0] Server - Complaint Created
-[INFO ] 2022-04-17 18:30:09.379 [Thread-0] Complaint - Complaint created and saved
-[INFO ] 2022-04-17 18:30:09.379 [Thread-0] Server - Complaint Created
-[INFO ] 2022-04-17 18:30:25.932 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-17 18:30:42.964 [Thread-2] Employee - Employee authenticated
-[INFO ] 2022-04-17 18:30:42.995 [Thread-2] Employee - Employee read
-[INFO ] 2022-04-17 18:30:42.995 [Thread-2] Server - Employee Authenticated
-[INFO ] 2022-04-17 18:30:43.057 [Thread-2] Employee - Employee read
-[INFO ] 2022-04-17 18:30:43.057 [Thread-2] Server - Employee is not a Technician
-[INFO ] 2022-04-17 18:30:46.605 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:46.620 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:46.652 [Thread-2] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-17 18:30:46.652 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:46.683 [Thread-2] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-17 18:30:46.698 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:46.730 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:46.761 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:46.773 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:46.804 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:46.820 [Thread-2] Server - Internet Complaints fetched successfully
-[INFO ] 2022-04-17 18:30:46.929 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:46.929 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:46.929 [Thread-2] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-17 18:30:46.945 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:46.945 [Thread-2] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-17 18:30:47.008 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:47.008 [Thread-2] Server - Cable Complaints fetched successfully
-[INFO ] 2022-04-17 18:30:47.086 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:47.133 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:47.133 [Thread-2] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-17 18:30:47.164 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:47.164 [Thread-2] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-17 18:30:47.179 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:47.195 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:47.195 [Thread-2] Server - Payment Complaints fetched successfully
-[INFO ] 2022-04-17 18:30:47.242 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:47.242 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:47.242 [Thread-2] CustomerPhone - All records in CustomerPhone Table read
-[INFO ] 2022-04-17 18:30:47.257 [Thread-2] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:30:47.257 [Thread-2] CustomerEmail - All records in CustomerEmail Table read
-[INFO ] 2022-04-17 18:30:47.289 [Thread-2] Customer - Customer read
-[INFO ] 2022-04-17 18:30:47.289 [Thread-2] Server - Other Complaints fetched successfully
-[INFO ] 2022-04-17 18:30:47.539 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:47.539 [Thread-2] Server - Number of resolved and unresolved complaints calculated successfully
-[INFO ] 2022-04-17 18:30:47.601 [Thread-2] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:30:47.601 [Thread-2] Server - Number of resolved and unresolved complaints calculated successfully
-[INFO ] 2022-04-17 18:35:01.814 [main] Server - Server has started!!!
-[INFO ] 2022-04-17 18:35:21.459 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-17 18:35:27.839 [main] Server - Server is starting a thread for a Client
-[INFO ] 2022-04-17 18:35:59.302 [Thread-0] SessionFactoryBuilder - Session established
-[INFO ] 2022-04-17 18:35:59.771 [Thread-0] Customer - Customer authenticated
-[INFO ] 2022-04-17 18:35:59.880 [Thread-0] Customer - Customer read
-[INFO ] 2022-04-17 18:35:59.880 [Thread-0] Server - Customer Authenticated
-[INFO ] 2022-04-17 18:36:06.015 [Thread-0] Payment - All Payments read
-[INFO ] 2022-04-17 18:36:06.015 [Thread-0] Server - Past payments of a customer fetched successfully
-[INFO ] 2022-04-17 18:36:10.218 [Thread-0] DBConnectorFactory - Connection established
-[INFO ] 2022-04-17 18:36:10.218 [Thread-0] Query - Record in Query Table read
-[INFO ] 2022-04-17 18:36:10.312 [Thread-0] Server - Query executed
-[INFO ] 2022-04-17 18:36:15.922 [Thread-0] Payment - All Payments read
-[INFO ] 2022-04-17 18:36:15.922 [Thread-0] Server - Past payments of a customer fetched successfully
-[INFO ] 2022-04-17 18:36:17.737 [Thread-0] Complaint - All Complaints read
-[INFO ] 2022-04-17 18:36:17.925 [Thread-0] Response - All Responses read
-[INFO ] 2022-04-17 18:36:17.972 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-17 18:36:17.987 [Thread-0] Employee - Employee read
-[INFO ] 2022-04-17 18:36:18.034 [Thread-0] Server - Past Complaints of a customer fetched successfully
-[INFO ] 2022-04-17 18:36:21.894 [Thread-0] Response - All Responses read
-[INFO ] 2022-04-17 18:36:21.894 [Thread-0] Server - All Responses to a complaint are fetched successfully
-[INFO ] 2022-04-17 18:36:26.810 [Thread-0] Response - All Responses read
-[INFO ] 2022-04-17 18:36:26.810 [Thread-0] Server - All Responses to a complaint are fetched successfully
-[INFO ] 2022-04-17 18:36:38.893 [Thread-0] Response - All Responses read
-[INFO ] 2022-04-17 18:36:38.909 [Thread-0] Server - All Responses to a complaint are fetched successfully
-[INFO ] 2022-04-17 18:37:01.939 [Thread-1] Employee - Employee authenticated
-[INFO ] 2022-04-17 18:37:01.954 [Thread-1] Employee - Employee read
-[INFO ] 2022-04-17 18:37:01.970 [Thread-1] Server - Employee Authenticated
-[INFO ] 2022-04-17 18:37:01.986 [Thread-1] Employee - Employee read
-[INFO ] 2022-04-17 18:37:01.986 [Thread-1] Server - Employee is not a Technician
+[INFO ] 2022-04-19 01:05:42.052 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:05:47.181 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:06:00.087 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:06:00.369 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:06:00.420 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:06:00.451 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:06:06.274 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:06:06.319 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:06:06.336 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:06:06.369 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:06:14.546 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:06:14.592 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:06:14.602 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:06:14.604 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:07:43.598 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:07:49.552 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:08:02.594 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:08:02.859 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:08:02.911 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:08:02.929 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:08:08.796 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:08:08.835 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:08:08.845 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:08:08.861 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:09:23.303 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:09:28.039 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:09:42.462 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:09:42.715 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:09:42.791 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:09:42.800 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:09:49.865 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:09:49.904 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:09:49.924 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:09:49.940 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:22:43.565 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:22:52.183 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:23:28.807 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:23:29.188 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:23:29.252 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:23:29.261 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:27:36.299 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:27:41.602 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:27:56.452 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:27:56.802 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:27:56.909 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:27:56.914 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:29:38.188 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:29:46.277 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:29:58.432 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:29:58.770 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:29:58.818 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:29:58.823 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:30:03.354 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:30:03.465 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:30:03.478 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:30:03.488 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:30:04.439 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:30:26.601 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:30:26.635 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:30:26.663 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:30:26.675 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:30:26.685 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 01:34:37.118 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 01:34:51.985 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 01:35:05.835 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 01:35:06.111 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 01:35:06.161 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 01:35:06.184 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 01:35:10.821 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 01:35:10.858 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 01:35:10.873 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:35:10.887 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 01:35:10.910 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:08:43.886 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:09:10.707 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:09:35.333 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:09:35.966 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:09:35.998 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:09:36.005 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:09:46.324 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:09:46.487 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:09:46.576 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:09:46.630 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:10:22.800 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:10:22.852 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:10:22.863 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:10:22.869 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:14:36.034 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:14:49.635 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:15:17.648 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:15:17.942 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:15:18.020 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:15:18.025 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:15:25.204 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:15:25.239 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:15:25.250 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:15:25.286 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:17:22.256 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:17:29.031 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:17:40.660 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:17:41.030 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:17:41.131 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:17:41.136 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:17:45.707 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:17:45.741 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:17:45.758 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:17:45.771 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:17:45.803 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:20:45.990 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:21:08.245 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:21:23.722 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:21:24.007 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:21:24.112 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:21:24.117 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:21:31.767 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:21:31.810 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:21:31.827 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:21:31.840 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:21:31.886 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:31:48.347 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:32:20.075 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:32:50.203 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:32:50.860 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:32:50.889 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:32:50.893 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:33:10.563 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:33:10.615 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:33:10.633 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:33:10.647 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:33:10.715 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:35:27.099 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:35:54.546 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:36:15.646 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:36:15.900 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:36:15.969 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:36:15.974 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:38:27.103 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:38:40.731 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:39:04.189 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:39:04.484 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:39:04.546 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:39:04.555 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:39:07.609 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:39:07.647 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:39:07.662 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:39:07.696 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:41:18.234 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:41:24.504 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:41:37.680 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:41:38.004 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:41:38.047 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:41:38.058 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:42:57.487 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:43:07.081 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:43:18.036 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:43:18.309 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:43:18.368 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:43:18.376 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:45:09.006 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:45:16.181 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:45:29.264 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:45:29.561 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:45:29.615 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:45:29.621 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:51:07.707 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:51:18.834 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:51:32.552 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:51:32.820 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:51:32.862 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:51:32.872 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:51:49.988 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:51:50.027 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:51:50.046 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:51:50.057 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:51:50.084 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:51:59.013 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:51:59.047 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:51:59.056 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:51:59.067 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:51:59.070 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 02:55:26.322 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:55:33.223 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:55:46.868 [Thread-0] SessionFactoryBuilder - Session established
+[ERROR] 2022-04-19 02:55:47.302 [Thread-0] Customer - RunTime exception occurred
+[ERROR] 2022-04-19 02:55:47.378 [Thread-0] Customer - Transaction rolled back
+[INFO ] 2022-04-19 02:55:47.392 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:55:47.394 [Thread-0] Server - Customer provided incorrect credentials
+[INFO ] 2022-04-19 02:56:26.164 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 02:56:33.221 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 02:56:54.113 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 02:56:54.391 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 02:56:54.438 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 02:56:54.444 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 02:57:14.475 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 02:57:14.510 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 02:57:14.527 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:57:14.539 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 02:57:14.554 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 03:00:35.746 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:00:43.072 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:00:55.726 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:00:56.009 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:00:56.055 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:00:56.062 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:02:02.902 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 03:02:02.937 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 03:02:02.952 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:02:02.964 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:02:03.004 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 03:02:54.264 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:03:02.994 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:03:15.638 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:03:15.948 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:03:16.001 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:03:16.013 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:03:18.565 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 03:03:18.607 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 03:03:18.624 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:03:18.639 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:03:18.660 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 03:03:40.036 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 03:03:40.058 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 03:03:40.070 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:03:40.090 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 03:03:40.095 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 03:08:35.810 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:08:43.571 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:09:03.031 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:09:03.296 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:09:03.357 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:09:03.371 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:10:58.946 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:11:08.984 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:11:23.261 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:11:23.566 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:11:23.618 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:11:23.627 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:13:03.827 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:13:13.572 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:13:37.089 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:13:37.363 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:13:37.396 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:13:37.401 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:23:49.022 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:23:59.913 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:24:21.088 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:24:21.407 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:24:21.507 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:24:21.513 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 03:27:09.492 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 03:27:35.152 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 03:27:50.943 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 03:27:51.221 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 03:27:51.318 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 03:27:51.325 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:05:13.804 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:05:51.313 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:06:26.521 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:06:27.122 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:06:27.163 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:06:27.168 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:10:12.612 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:10:22.136 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:10:35.370 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:10:35.652 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:10:35.721 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:10:35.725 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:10:41.265 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 12:10:41.327 [Thread-0] Query - Record in Query Table read
+[INFO ] 2022-04-19 12:10:41.390 [Thread-0] Server - Query executed
+[INFO ] 2022-04-19 12:10:44.980 [Thread-0] Payment - All Payments read
+[INFO ] 2022-04-19 12:10:45.019 [Thread-0] Server - Past payments of a customer fetched successfully
+[INFO ] 2022-04-19 12:11:56.852 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:12:04.141 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:12:15.854 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:12:16.125 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:12:16.175 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:12:16.182 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:13:35.134 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:13:43.429 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:13:55.659 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:13:55.937 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:13:56.015 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:13:56.025 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:13:59.516 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 12:13:59.662 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 12:13:59.723 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:13:59.735 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:13:59.769 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 12:17:59.600 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:18:27.196 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:18:38.790 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:18:39.100 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:18:39.151 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:18:39.155 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:18:42.528 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 12:18:42.579 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 12:18:42.596 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:18:42.608 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:18:42.635 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 12:24:00.210 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:27:59.927 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:28:12.833 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:28:13.113 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:28:13.169 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:28:13.177 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:28:16.352 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 12:28:16.379 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 12:28:16.390 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:28:16.402 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:28:16.421 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 12:30:42.464 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:30:49.486 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:31:02.123 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:31:02.415 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:31:02.479 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:31:02.485 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:31:06.806 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 12:31:06.847 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 12:31:06.861 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:31:06.880 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 12:31:06.901 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 12:34:14.580 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:34:22.872 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:34:34.583 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:34:34.885 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:34:34.933 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:34:34.952 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:37:50.491 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:38:06.089 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:38:28.251 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:38:28.585 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:38:28.662 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:38:28.671 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:42:18.851 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:42:31.796 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:43:17.815 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:43:18.174 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:43:18.222 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:43:18.239 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 12:59:16.973 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 12:59:30.681 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 12:59:54.615 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 12:59:54.931 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 12:59:54.999 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 12:59:55.004 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:00:01.233 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:00:01.431 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 13:00:01.488 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 13:00:01.496 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 13:00:01.610 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:03:52.755 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:03:59.969 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:04:37.477 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:04:37.972 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:04:38.008 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:04:38.013 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:04:45.376 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:04:46.128 [Thread-2] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:04:46.165 [Thread-2] Response - All Responses read
+[INFO ] 2022-04-19 13:04:46.183 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:04:46.198 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:04:46.305 [Thread-2] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:07:56.079 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:08:49.290 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:09:03.880 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:09:04.162 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:09:04.213 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:09:04.231 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:09:09.452 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:09:10.796 [Thread-2] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:09:10.862 [Thread-2] Response - All Responses read
+[INFO ] 2022-04-19 13:09:10.874 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:09:10.891 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:09:10.948 [Thread-2] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:28:46.501 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:29:18.966 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:29:43.567 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:29:43.866 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:29:43.905 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:29:43.919 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:30:42.693 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:30:52.193 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:31:09.337 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:31:09.806 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:31:09.855 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:31:09.860 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:35:35.103 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:36:05.230 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:36:50.861 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:36:51.176 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:36:51.255 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:36:51.260 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:37:34.939 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:37:34.992 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 13:37:35.009 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 13:37:35.019 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 13:37:35.095 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:52:00.419 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 13:52:11.660 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:52:31.654 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 13:52:31.961 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 13:52:32.033 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 13:52:32.039 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 13:52:37.863 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:52:38.250 [Thread-2] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:52:38.388 [Thread-2] Response - All Responses read
+[INFO ] 2022-04-19 13:52:38.426 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:52:38.472 [Thread-2] Employee - Employee read
+[INFO ] 2022-04-19 13:52:38.518 [Thread-2] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:52:56.607 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 13:52:56.808 [Thread-3] Complaint - All Complaints read
+[INFO ] 2022-04-19 13:52:56.854 [Thread-3] Response - All Responses read
+[INFO ] 2022-04-19 13:52:56.890 [Thread-3] Employee - Employee read
+[INFO ] 2022-04-19 13:52:56.942 [Thread-3] Employee - Employee read
+[INFO ] 2022-04-19 13:52:56.947 [Thread-3] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 13:59:52.046 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:00:01.279 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:00:13.724 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:00:14.000 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:00:14.095 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:00:14.101 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:00:21.225 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:00:21.287 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:00:21.301 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:00:21.322 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:00:21.336 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 14:02:47.984 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:02:59.129 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:03:14.390 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:03:14.708 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:03:14.752 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:03:14.770 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:03:20.435 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:03:20.471 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:03:20.484 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:03:20.497 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:03:20.517 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 14:12:42.201 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:12:50.903 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:13:02.593 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:13:02.927 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:13:02.981 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:13:03.002 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:13:08.443 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:13:08.476 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:13:08.492 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:13:08.505 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:13:08.528 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[FATAL] 2022-04-19 14:40:46.463 [main] Server - IOException Occurred
+[INFO ] 2022-04-19 14:40:46.731 [main] Driver - Database Connections Closed
+[INFO ] 2022-04-19 14:41:50.736 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:43:08.991 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:43:48.419 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:43:48.935 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:43:48.975 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:43:48.979 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:44:00.612 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:44:00.753 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:44:00.819 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:44:00.827 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:44:00.873 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 14:49:45.379 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:50:08.994 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:50:23.434 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:50:23.806 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:50:23.872 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:50:23.878 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:51:40.924 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:51:40.971 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:51:40.995 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:51:41.011 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 14:55:24.653 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 14:56:45.785 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 14:57:00.565 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 14:57:00.829 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 14:57:00.924 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 14:57:00.934 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 14:57:06.883 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 14:57:06.926 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 14:57:06.937 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:57:06.951 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 14:57:06.979 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 14:59:35.529 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:01:28.390 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:01:45.555 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:01:45.829 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:01:45.881 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:01:45.889 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:01:52.942 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:01:52.989 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:01:53.003 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:01:53.015 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:01:53.033 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:04:57.347 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:05:48.124 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:06:27.221 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:06:27.514 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:06:27.567 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:06:27.583 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:06:35.961 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:06:36.012 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:06:36.030 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:06:36.044 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:06:36.067 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:09:23.042 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:09:37.620 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:09:59.599 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:09:59.852 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:09:59.914 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:09:59.918 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:10:50.778 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:10:50.819 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:10:50.832 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:10:50.846 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:10:50.866 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:10:55.330 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:10:55.381 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:10:55.415 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:10:55.437 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:10:55.464 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:11:28.854 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:11:28.883 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:11:28.930 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:11:28.943 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:11:28.946 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[FATAL] 2022-04-19 15:21:10.807 [main] Server - IOException Occurred
+[INFO ] 2022-04-19 15:21:10.989 [main] Driver - Database Connections Closed
+[INFO ] 2022-04-19 15:21:35.714 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:21:47.292 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:22:19.118 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:22:19.451 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:22:19.506 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:22:19.514 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:31:02.700 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:31:11.757 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:31:25.552 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:31:25.847 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:31:25.896 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:31:25.910 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:31:33.624 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:31:33.704 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:31:33.717 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:31:33.881 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:31:33.929 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:32:13.738 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:32:13.758 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:32:13.775 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:32:13.794 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:32:13.811 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:38:11.710 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:38:32.151 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:38:47.446 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:38:47.800 [Thread-0] Customer - Customer authenticated
+[INFO ] 2022-04-19 15:38:47.831 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:38:47.837 [Thread-0] Server - Customer Authenticated
+[INFO ] 2022-04-19 15:38:53.941 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:38:53.982 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:38:53.994 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:38:54.008 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:39:28.144 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:39:28.167 [Thread-0] Response - All Responses read
+[INFO ] 2022-04-19 15:39:28.176 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:39:28.177 [Thread-0] Server - Past Complaints of a customer fetched successfully
+[INFO ] 2022-04-19 15:48:57.764 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:49:11.449 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:50:16.436 [Thread-0] SessionFactoryBuilder - Session established
+[ERROR] 2022-04-19 15:50:16.757 [Thread-0] Employee - RunTime exception occurred
+[ERROR] 2022-04-19 15:50:16.789 [Thread-0] Employee - Transaction rolled back
+[INFO ] 2022-04-19 15:50:16.804 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:50:16.806 [Thread-0] Server - Employee Provided incorrect credentials
+[INFO ] 2022-04-19 15:51:16.358 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:51:24.139 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:51:38.299 [Thread-0] SessionFactoryBuilder - Session established
+[ERROR] 2022-04-19 15:51:38.544 [Thread-0] Employee - RunTime exception occurred
+[ERROR] 2022-04-19 15:51:38.555 [Thread-0] Employee - Transaction rolled back
+[INFO ] 2022-04-19 15:51:38.603 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:51:38.604 [Thread-0] Server - Employee Provided incorrect credentials
+[INFO ] 2022-04-19 15:51:58.888 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:52:11.824 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:53:22.439 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:53:22.790 [Thread-0] Employee - Employee authenticated
+[INFO ] 2022-04-19 15:53:22.863 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:53:22.873 [Thread-0] Server - Employee Authenticated
+[INFO ] 2022-04-19 15:53:22.897 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:53:22.898 [Thread-0] Server - Employee is not a Technician
+[INFO ] 2022-04-19 15:53:29.873 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:29.970 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.161 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-19 15:53:30.274 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.376 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-19 15:53:30.386 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.396 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.405 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.421 [Thread-0] Server - Internet Complaints fetched successfully
+[INFO ] 2022-04-19 15:53:30.447 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:30.479 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.481 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-19 15:53:30.485 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.486 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-19 15:53:30.497 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.501 [Thread-0] Server - Cable Complaints fetched successfully
+[INFO ] 2022-04-19 15:53:30.529 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:30.536 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.538 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-19 15:53:30.611 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.612 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-19 15:53:30.624 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.636 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.637 [Thread-0] Server - Payment Complaints fetched successfully
+[INFO ] 2022-04-19 15:53:30.661 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:30.695 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.697 [Thread-0] CustomerPhone - All records in CustomerPhone Table read
+[INFO ] 2022-04-19 15:53:30.702 [Thread-0] DBConnectorFactory - Connection established
+[INFO ] 2022-04-19 15:53:30.704 [Thread-0] CustomerEmail - All records in CustomerEmail Table read
+[INFO ] 2022-04-19 15:53:30.717 [Thread-0] Customer - Customer read
+[INFO ] 2022-04-19 15:53:30.721 [Thread-0] Server - Other Complaints fetched successfully
+[INFO ] 2022-04-19 15:53:30.940 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:30.944 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-19 15:53:30.974 [Thread-0] Complaint - All Complaints read
+[INFO ] 2022-04-19 15:53:30.975 [Thread-0] Server - Number of resolved and unresolved complaints calculated successfully
+[INFO ] 2022-04-19 15:57:19.600 [main] Server - Server has started!!!
+[INFO ] 2022-04-19 15:57:41.024 [main] Server - Server is starting a thread for a Client
+[INFO ] 2022-04-19 15:58:04.370 [Thread-0] SessionFactoryBuilder - Session established
+[INFO ] 2022-04-19 15:58:04.674 [Thread-0] Employee - Employee authenticated
+[INFO ] 2022-04-19 15:58:04.742 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:58:04.750 [Thread-0] Server - Employee Authenticated
+[INFO ] 2022-04-19 15:58:04.769 [Thread-0] Employee - Employee read
+[INFO ] 2022-04-19 15:58:04.769 [Thread-0] Server - Employee is not a Technician

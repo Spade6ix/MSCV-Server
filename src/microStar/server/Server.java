@@ -571,7 +571,7 @@ public class Server {
 									break;
 								}
 							}
-							logger.info("Video Frame/s Transmitted");
+							//logger.info("Video Frame/s Transmitted");
 						}
 						else if (action.equalsIgnoreCase("Customer ReadAll LiveChat")){
 							customerObj = (Customer) objIs.readObject();
