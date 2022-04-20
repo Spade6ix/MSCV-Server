@@ -32,7 +32,7 @@ import microStar.model.LiveChat;
 import microStar.model.Payment;
 import microStar.model.Query;
 import microStar.model.Response;
-import microStar.model.VideoFrame;
+
 
 import org.hibernate.type.LocalDateTimeType;
 
@@ -43,22 +43,36 @@ public class Server {
     
     private ServerSocket serverSocket;
 	private Socket connectionSocket;
+	public int state;
 	
 	private  ArrayList<ClientHandler> clientList = new ArrayList<ClientHandler>();
 	
     
 	public Server() {
+		state = 1;
+	}
+	
+	
+	
+	public void startServer() {
 		try{
 			serverSocket = new ServerSocket (9555);
 			connectionSocket = new Socket();
 			logger.info("Server has started!!!");
 			while(true){
-				connectionSocket = serverSocket.accept();
+				
+				connectionSocket = serverSocket.accept();				
 				logger.info("Server is starting a thread for a Client");
-				//JOptionPane.showMessageDialog(null,"Connection Established","Server Connection Status",JOptionPane.INFORMATION_MESSAGE);
-				ClientHandler client = new ClientHandler(connectionSocket);
+				
+				if (state == 0) { 
+					logger.info("Server has stopped!!!");
+					break;
+				}
+				
+				ClientHandler client = new ClientHandler(connectionSocket);	
 				client.start();
 				clientList.add(client);
+				
 			}
 		}
 		catch(IOException x){
@@ -66,6 +80,8 @@ public class Server {
 			x.printStackTrace();
 		}
 	}
+	
+	
 	
 	class ClientHandler extends Thread{
 
@@ -654,5 +670,6 @@ public class Server {
 		}
 		
 	}
+
 
 }
